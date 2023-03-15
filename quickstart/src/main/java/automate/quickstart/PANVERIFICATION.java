@@ -42,10 +42,12 @@ public class PANVERIFICATION extends Configuration{
 	@Test
 public void PAN()
 {
-	
+
+	//  automati  
+	  //  WebElement element = driver.findElement(MobileBy.xpath("//android.widget.Button[@content-desc='Next']"));
 
     
-//  automation  
+//  automati  
     WebElement element = driver.findElement(MobileBy.xpath("//android.widget.Button[@content-desc='Next']"));
     element.click();
     WebElement popup = driver.findElement(By.id("com.google.android.gms:id/credentials_hint_picker_title"));
