@@ -45,7 +45,7 @@ public void PAN()
 	
 
     
-//    
+//  automation  
     WebElement element = driver.findElement(MobileBy.xpath("//android.widget.Button[@content-desc='Next']"));
     element.click();
     WebElement popup = driver.findElement(By.id("com.google.android.gms:id/credentials_hint_picker_title"));
