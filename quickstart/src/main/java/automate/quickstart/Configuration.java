@@ -1,25 +1,44 @@
 package automate.quickstart;
 
+
+
 import java.net.MalformedURLException;
 import java.net.URL;
 import java.util.concurrent.TimeUnit;
 
+import org.openqa.selenium.Dimension;
+import org.openqa.selenium.Point;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeTest;
 
 import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.MobileElement;
+import io.appium.java_client.TouchAction;
 import io.appium.java_client.android.AndroidDriver;
+import io.appium.java_client.touch.offset.PointOption;
 
 public class Configuration {
+	 public void clickOnPoint(int x, int y) {
+	        // Get the screen size
+		 TouchAction touchAction = new TouchAction(driver);
+
+		// Get device screen dimensions
+		
+
+		// Generate random x and y coordinates within the screen bounds
+		
+		// Use TouchAction to perform tap/click on the random point
+		touchAction.tap(PointOption.point(x, y)).perform();
+	    }
     public AppiumDriver<MobileElement> driver;
     public DesiredCapabilities caps = new DesiredCapabilities();
     @BeforeTest
   
     public void configureAppium() throws MalformedURLException {
         // Set the Desired Capabilities
-        caps.setCapability("deviceName", "realme RMX3081");
+     //  caps.setCapability("deviceName", "realme RMX3081");
+      caps.setCapability("deviceName", "adi");
         caps.setCapability("platformName", "Android");
         caps.setCapability("appPackage", "com.stocky_dodo.app");
         caps.setCapability("appActivity", "com.stocky_dodo.app.MainActivity");

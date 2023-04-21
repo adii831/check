@@ -3,12 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="automate.quickstart.PANVERIFICATION">
+      <class name="automate.quickstart.EditProfile">
         <methods>
-          <include name="PAN"/>
-          <include name="configureAppium"/>
+          <include name="editProfile"/>
         </methods>
-      </class> <!-- automate.quickstart.PANVERIFICATION -->
+      </class> <!-- automate.quickstart.EditProfile -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

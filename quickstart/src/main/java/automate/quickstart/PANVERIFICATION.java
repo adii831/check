@@ -1,77 +1,73 @@
-package automate.quickstart;
-import io.appium.java_client.AppiumDriver;
-import io.appium.java_client.MobileBy;
+//package automate.quickstart;
+//import io.appium.java_client.AppiumDriver;
+//import io.appium.java_client.MobileBy;
+//
+//import io.appium.java_client.TouchAction;
+//import io.appium.java_client.android.AndroidDriver;
+//import io.appium.java_client.android.AndroidElement;
+//import io.appium.java_client.touch.WaitOptions;
+//import io.appium.java_client.touch.offset.ElementOption;
+//import org.openqa.selenium.Dimension;
+//import java.time.Duration;
+//import io.appium.java_client.MobileBy;
+//import io.appium.java_client.android.AndroidDriver;
+//import io.appium.java_client.MobileElement;
+//
+//import org.openqa.selenium.By;
+//import org.openqa.selenium.WebElement;
+//import org.openqa.selenium.remote.DesiredCapabilities;
+//import org.openqa.selenium.support.ui.ExpectedConditions;
+//import org.openqa.selenium.support.ui.WebDriverWait;
+//import org.testng.annotations.BeforeMethod;
+//import org.testng.annotations.Test;
+//
+//import java.net.MalformedURLException;
+//import java.net.URL;
+//import java.util.List;
+//import java.util.concurrent.TimeUnit;
+//import io.appium.java_client.TouchAction;
+//import io.appium.java_client.TouchAction;
+//import io.appium.java_client.android.AndroidDriver;
+//
+//import io.appium.java_client.touch.offset.ElementOption;
+//import org.openqa.selenium.Dimension;
+//import io.appium.java_client.TouchAction;
+//import io.appium.java_client.android.AndroidDriver;
+//
+//import io.appium.java_client.touch.offset.ElementOption;
+//import org.openqa.selenium.Dimension;
 
-import io.appium.java_client.TouchAction;
-import io.appium.java_client.android.AndroidDriver;
-import io.appium.java_client.android.AndroidElement;
-import io.appium.java_client.touch.WaitOptions;
-import io.appium.java_client.touch.offset.ElementOption;
-import org.openqa.selenium.Dimension;
-import java.time.Duration;
-import io.appium.java_client.MobileBy;
-import io.appium.java_client.android.AndroidDriver;
-import io.appium.java_client.MobileElement;
-
-import org.openqa.selenium.By;
-import org.openqa.selenium.WebElement;
-import org.openqa.selenium.remote.DesiredCapabilities;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
-import org.testng.annotations.BeforeMethod;
-import org.testng.annotations.Test;
-
-import java.net.MalformedURLException;
-import java.net.URL;
-import java.util.List;
-import java.util.concurrent.TimeUnit;
-import io.appium.java_client.TouchAction;
-import io.appium.java_client.TouchAction;
-import io.appium.java_client.android.AndroidDriver;
-
-import io.appium.java_client.touch.offset.ElementOption;
-import org.openqa.selenium.Dimension;
-import io.appium.java_client.TouchAction;
-import io.appium.java_client.android.AndroidDriver;
-
-import io.appium.java_client.touch.offset.ElementOption;
-import org.openqa.selenium.Dimension;
-
-public class PANVERIFICATION extends Configuration{
+//public class PANVERIFICATION extends editProfileHamburgerMenu{
 	  
-	@Test
-public void PAN()
-{
+//	@Test(priority=3)
+//public void PAN()
+//{
 
 	//  automati  
 	  //  WebElement element = driver.findElement(MobileBy.xpath("//android.widget.Button[@content-desc='Next']"));
 
     
-//  automati  
-    WebElement element = driver.findElement(MobileBy.xpath("//android.widget.Button[@content-desc='Next']"));
-    element.click();
-    WebElement popup = driver.findElement(By.id("com.google.android.gms:id/credentials_hint_picker_title"));
-
- // Check if the popup element is displayed
- if(popup.isDisplayed()) {
-	 WebElement element3 = driver.findElement(MobileBy.xpath("//android.widget.LinearLayout[@content-desc='079038 25832']/android.widget.LinearLayout/android.widget.LinearLayout[2]/android.widget.TextView"));
-	    element3.click();
-		
-	  //android.widget.LinearLayout[@content-desc='079038 25832']/android.widget.LinearLayout/android.widget.LinearLayout[2]/android.widget.TextView
-     
- }
-   
-	 MobileElement myTextField = driver.findElement(By.className("android.widget.EditText"));
-	 myTextField.sendKeys("7903825832");
-	
- 
- MobileElement myCheckbox = driver.findElement(By.xpath("//android.view.View[@content-desc='Agree to ']/android.widget.CheckBox"));
- myCheckbox.click();
- MobileElement element2 = driver.findElement(MobileBy.xpath("//android.widget.Button[@content-desc='Send OTP']"));
- element2.click();
- WebDriverWait wait = new WebDriverWait(driver, 10);
-WebElement element9 = driver.findElement(MobileBy.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.View/android.view.View/android.view.View/android.view.View/android.view.View[1]/android.widget.ImageView[1]"));
- element9.click();
+////  automati  
+//    WebElement element = driver.findElement(MobileBy.xpath("//android.widget.Button[@content-desc='Next']"));
+//    element.click();
+//    WebElement popup = driver.findElement(By.id("com.google.android.gms:id/credentials_hint_picker_title"));
+//
+// // Check if the popup element is displayed
+// if(popup.isDisplayed()) {
+//	 WebElement element3 = driver.findElement(MobileBy.xpath("//android.widget.LinearLayout[@content-desc='079038 25832']/android.widget.LinearLayout/android.widget.LinearLayout[2]/android.widget.TextView"));
+//	    element3.click();
+//		
+//	  //android.widget.LinearLayout[@content-desc='079038 25832']/android.widget.LinearLayout/android.widget.LinearLayout[2]/android.widget.TextView
+//     
+// }
+//   
+//	 MobileElement myTextField = driver.findElement(By.className("android.widget.EditText"));
+//	 myTextField.sendKeys("7903825832");
+//		driver.navigate().refresh();
+// 
+// WebDriverWait wait = new WebDriverWait(driver, 10);
+//WebElement element9 = driver.findElement(MobileBy.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.View/android.view.View/android.view.View/android.view.View/android.view.View[1]/android.widget.ImageView[1]"));
+// element9.click();
 // WebElement balance = driver.findElement(By.xpath("//android.widget.ImageView[@content-desc='My Balance']"));
 // balance.click();
 // WebElement verify = driver.findElement(By.xpath("//android.view.View[@content-desc='Verify']"));
@@ -108,12 +104,13 @@ WebElement element9 = driver.findElement(MobileBy.xpath("/hierarchy/android.widg
 //OK.click();
 //MobileElement submit= driver.findElement(MobileBy.xpath("//android.widget.Button[@content-desc='Submit']"));
 //submit.click();
-MobileElement Profile= driver.findElement(By.className("android.view.View"));
-Profile.click();
-
-   
-  }
-	}
+// 
+//MobileElement Profile= driver.findElement(By.className("android.view.View"));
+//Profile.click();
+//
+//   
+//  }
+//	}
 
 	  
 
