@@ -1,26 +1,986 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="8" passed="1" failed="7" skipped="0">
+<testng-results ignored="0" total="14" passed="3" failed="2" skipped="9">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-04-20T16:41:55 IST" name="Suite" finished-at="2023-04-20T16:43:26 IST" duration-ms="90899">
+  <suite started-at="2023-05-08T15:41:42 IST" name="Suite" finished-at="2023-05-08T15:46:54 IST" duration-ms="312189">
     <groups>
     </groups>
-    <test started-at="2023-04-20T16:41:55 IST" name="Test" finished-at="2023-04-20T16:43:26 IST" duration-ms="90899">
+    <test started-at="2023-05-08T15:41:42 IST" name="Test" finished-at="2023-05-08T15:46:54 IST" duration-ms="312189">
       <class name="automate.quickstart.EditProfile">
-        <test-method signature="editProfile()[pri:1, instance:automate.quickstart.EditProfile@123ef382]" started-at="2023-04-20T16:42:11 IST" name="editProfile" finished-at="2023-04-20T16:43:26 IST" duration-ms="75318" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:automate.quickstart.EditProfile@24313fcc]" started-at="2023-05-08T15:42:05 IST" name="setup" finished-at="2023-05-08T15:42:16 IST" duration-ms="11758" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="checkElements()[pri:1, instance:automate.quickstart.EditProfile@24313fcc]" started-at="2023-05-08T15:42:16 IST" name="checkElements" finished-at="2023-05-08T15:44:11 IST" duration-ms="114950" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkElements -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:automate.quickstart.EditProfile@24313fcc]" started-at="2023-05-08T15:44:11 IST" name="tearDown" finished-at="2023-05-08T15:44:12 IST" duration-ms="672" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:automate.quickstart.EditProfile@24313fcc]" started-at="2023-05-08T15:44:12 IST" name="setup" finished-at="2023-05-08T15:44:23 IST" duration-ms="11120" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="hamburger_profile()[pri:2, instance:automate.quickstart.EditProfile@24313fcc]" started-at="2023-05-08T15:44:23 IST" name="hamburger_profile" finished-at="2023-05-08T15:45:01 IST" duration-ms="37312" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- hamburger_profile -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:automate.quickstart.EditProfile@24313fcc]" started-at="2023-05-08T15:45:01 IST" name="tearDown" finished-at="2023-05-08T15:45:01 IST" duration-ms="597" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:automate.quickstart.EditProfile@24313fcc]" started-at="2023-05-08T15:45:01 IST" name="setup" finished-at="2023-05-08T15:45:12 IST" duration-ms="10469" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="ProfileNameAlreadyTaken()[pri:3, instance:automate.quickstart.EditProfile@24313fcc]" started-at="2023-05-08T15:45:12 IST" name="ProfileNameAlreadyTaken" finished-at="2023-05-08T15:45:57 IST" duration-ms="45745" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ProfileNameAlreadyTaken -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:automate.quickstart.EditProfile@24313fcc]" started-at="2023-05-08T15:45:57 IST" name="tearDown" finished-at="2023-05-08T15:45:58 IST" duration-ms="636" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:automate.quickstart.EditProfile@24313fcc]" started-at="2023-05-08T15:45:58 IST" name="setup" finished-at="2023-05-08T15:46:09 IST" duration-ms="11520" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="ProfileNameEmpty()[pri:4, instance:automate.quickstart.EditProfile@24313fcc]" started-at="2023-05-08T15:46:09 IST" name="ProfileNameEmpty" finished-at="2023-05-08T15:46:33 IST" duration-ms="23269" status="FAIL">
+          <exception class="org.openqa.selenium.WebDriverException">
+            <message>
+              <![CDATA[An unknown server-side error occurred while processing the command. Original error: Could not proxy command to the remote server. Original error: socket hang up
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LAPTOP-T69AHU1A', ip: '192.168.0.198', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {adbExecTimeout: 60000, appActivity: com.stocky_dodo.app.MainAct..., appPackage: com.stocky_dodo.app, appWaitForLaunch: false, automationName: UiAutomator2, databaseEnabled: false, desired: {adbExecTimeout: 60000, appActivity: com.stocky_dodo.app.MainAct..., appPackage: com.stocky_dodo.app, appWaitForLaunch: false, automationName: UiAutomator2, deviceName: realme RMX3081, noReset: true, platformName: android}, deviceApiLevel: 31, deviceManufacturer: realme, deviceModel: RMX3081, deviceName: 21b7da02, deviceScreenDensity: 480, deviceScreenSize: 1080x2400, deviceUDID: 21b7da02, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, noReset: true, pixelRatio: 3, platform: LINUX, platformName: Android, platformVersion: 12, statBarHeight: 108, takesScreenshot: true, viewportRect: {height: 2050, left: 0, top: 108, width: 1080}, warnings: {}, webStorageEnabled: false}
+Session ID: c059f71d-f170-4045-a63d-70493a465e75]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.WebDriverException: An unknown server-side error occurred while processing the command. Original error: Could not proxy command to the remote server. Original error: socket hang up
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LAPTOP-T69AHU1A', ip: '192.168.0.198', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {adbExecTimeout: 60000, appActivity: com.stocky_dodo.app.MainAct..., appPackage: com.stocky_dodo.app, appWaitForLaunch: false, automationName: UiAutomator2, databaseEnabled: false, desired: {adbExecTimeout: 60000, appActivity: com.stocky_dodo.app.MainAct..., appPackage: com.stocky_dodo.app, appWaitForLaunch: false, automationName: UiAutomator2, deviceName: realme RMX3081, noReset: true, platformName: android}, deviceApiLevel: 31, deviceManufacturer: realme, deviceModel: RMX3081, deviceName: 21b7da02, deviceScreenDensity: 480, deviceScreenSize: 1080x2400, deviceUDID: 21b7da02, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, noReset: true, pixelRatio: 3, platform: LINUX, platformName: Android, platformVersion: 12, statBarHeight: 108, takesScreenshot: true, viewportRect: {height: 2050, left: 0, top: 108, width: 1080}, warnings: {}, webStorageEnabled: false}
+Session ID: c059f71d-f170-4045-a63d-70493a465e75
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:250)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:41)
+at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+at io.appium.java_client.DefaultGenericMobileElement.execute(DefaultGenericMobileElement.java:45)
+at io.appium.java_client.MobileElement.execute(MobileElement.java:1)
+at io.appium.java_client.android.AndroidElement.execute(AndroidElement.java:1)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+at automate.quickstart.EditProfile.ProfileNameEmpty(EditProfile.java:107)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.WebDriverException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ProfileNameEmpty -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:automate.quickstart.EditProfile@24313fcc]" started-at="2023-05-08T15:46:33 IST" name="tearDown" finished-at="2023-05-08T15:46:54 IST" duration-ms="21280" status="FAIL">
+          <exception class="org.openqa.selenium.WebDriverException">
+            <message>
+              <![CDATA[An unknown server-side error occurred while processing the command. Original error: Error executing adbExec. Original error: 'Command 'C:\\Users\\AdityaRaj\\Desktop\\sdk\\platform-tools\\adb.exe -P 5037 -s 21b7da02 shell 'settings delete global hidden_api_policy_pre_p_apps;settings delete global hidden_api_policy_p_apps;settings delete global hidden_api_policy'' exited with code 1'; Command output: adb.exe: device '21b7da02' not found
+
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LAPTOP-T69AHU1A', ip: '192.168.0.198', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {adbExecTimeout: 60000, appActivity: com.stocky_dodo.app.MainAct..., appPackage: com.stocky_dodo.app, appWaitForLaunch: false, automationName: UiAutomator2, databaseEnabled: false, desired: {adbExecTimeout: 60000, appActivity: com.stocky_dodo.app.MainAct..., appPackage: com.stocky_dodo.app, appWaitForLaunch: false, automationName: UiAutomator2, deviceName: realme RMX3081, noReset: true, platformName: android}, deviceApiLevel: 31, deviceManufacturer: realme, deviceModel: RMX3081, deviceName: 21b7da02, deviceScreenDensity: 480, deviceScreenSize: 1080x2400, deviceUDID: 21b7da02, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, noReset: true, pixelRatio: 3, platform: LINUX, platformName: Android, platformVersion: 12, statBarHeight: 108, takesScreenshot: true, viewportRect: {height: 2050, left: 0, top: 108, width: 1080}, warnings: {}, webStorageEnabled: false}
+Session ID: c059f71d-f170-4045-a63d-70493a465e75]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.WebDriverException: An unknown server-side error occurred while processing the command. Original error: Error executing adbExec. Original error: 'Command 'C:\\Users\\AdityaRaj\\Desktop\\sdk\\platform-tools\\adb.exe -P 5037 -s 21b7da02 shell 'settings delete global hidden_api_policy_pre_p_apps;settings delete global hidden_api_policy_p_apps;settings delete global hidden_api_policy'' exited with code 1'; Command output: adb.exe: device '21b7da02' not found
+
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LAPTOP-T69AHU1A', ip: '192.168.0.198', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {adbExecTimeout: 60000, appActivity: com.stocky_dodo.app.MainAct..., appPackage: com.stocky_dodo.app, appWaitForLaunch: false, automationName: UiAutomator2, databaseEnabled: false, desired: {adbExecTimeout: 60000, appActivity: com.stocky_dodo.app.MainAct..., appPackage: com.stocky_dodo.app, appWaitForLaunch: false, automationName: UiAutomator2, deviceName: realme RMX3081, noReset: true, platformName: android}, deviceApiLevel: 31, deviceManufacturer: realme, deviceModel: RMX3081, deviceName: 21b7da02, deviceScreenDensity: 480, deviceScreenSize: 1080x2400, deviceUDID: 21b7da02, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, noReset: true, pixelRatio: 3, platform: LINUX, platformName: Android, platformVersion: 12, statBarHeight: 108, takesScreenshot: true, viewportRect: {height: 2050, left: 0, top: 108, width: 1080}, warnings: {}, webStorageEnabled: false}
+Session ID: c059f71d-f170-4045-a63d-70493a465e75
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:250)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:45)
+at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+at org.openqa.selenium.remote.RemoteWebDriver.quit(RemoteWebDriver.java:452)
+at automate.quickstart.EditProfile.tearDown(EditProfile.java:69)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:700)
+at org.testng.internal.TestInvoker.runAfterGroupsConfigurations(TestInvoker.java:676)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:660)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.WebDriverException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:automate.quickstart.EditProfile@24313fcc]" started-at="2023-05-08T15:46:54 IST" name="setup" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1683541014552" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="ProfileNamelessThanthree()[pri:5, instance:automate.quickstart.EditProfile@24313fcc]" started-at="2023-05-08T15:46:54 IST" name="ProfileNamelessThanthree" finished-at="2023-05-08T15:46:54 IST" duration-ms="0" status="SKIP">
+          <exception class="org.openqa.selenium.WebDriverException">
+            <message>
+              <![CDATA[An unknown server-side error occurred while processing the command. Original error: Error executing adbExec. Original error: 'Command 'C:\\Users\\AdityaRaj\\Desktop\\sdk\\platform-tools\\adb.exe -P 5037 -s 21b7da02 shell 'settings delete global hidden_api_policy_pre_p_apps;settings delete global hidden_api_policy_p_apps;settings delete global hidden_api_policy'' exited with code 1'; Command output: adb.exe: device '21b7da02' not found
+
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LAPTOP-T69AHU1A', ip: '192.168.0.198', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {adbExecTimeout: 60000, appActivity: com.stocky_dodo.app.MainAct..., appPackage: com.stocky_dodo.app, appWaitForLaunch: false, automationName: UiAutomator2, databaseEnabled: false, desired: {adbExecTimeout: 60000, appActivity: com.stocky_dodo.app.MainAct..., appPackage: com.stocky_dodo.app, appWaitForLaunch: false, automationName: UiAutomator2, deviceName: realme RMX3081, noReset: true, platformName: android}, deviceApiLevel: 31, deviceManufacturer: realme, deviceModel: RMX3081, deviceName: 21b7da02, deviceScreenDensity: 480, deviceScreenSize: 1080x2400, deviceUDID: 21b7da02, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, noReset: true, pixelRatio: 3, platform: LINUX, platformName: Android, platformVersion: 12, statBarHeight: 108, takesScreenshot: true, viewportRect: {height: 2050, left: 0, top: 108, width: 1080}, warnings: {}, webStorageEnabled: false}
+Session ID: c059f71d-f170-4045-a63d-70493a465e75]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.WebDriverException: An unknown server-side error occurred while processing the command. Original error: Error executing adbExec. Original error: 'Command 'C:\\Users\\AdityaRaj\\Desktop\\sdk\\platform-tools\\adb.exe -P 5037 -s 21b7da02 shell 'settings delete global hidden_api_policy_pre_p_apps;settings delete global hidden_api_policy_p_apps;settings delete global hidden_api_policy'' exited with code 1'; Command output: adb.exe: device '21b7da02' not found
+
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LAPTOP-T69AHU1A', ip: '192.168.0.198', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {adbExecTimeout: 60000, appActivity: com.stocky_dodo.app.MainAct..., appPackage: com.stocky_dodo.app, appWaitForLaunch: false, automationName: UiAutomator2, databaseEnabled: false, desired: {adbExecTimeout: 60000, appActivity: com.stocky_dodo.app.MainAct..., appPackage: com.stocky_dodo.app, appWaitForLaunch: false, automationName: UiAutomator2, deviceName: realme RMX3081, noReset: true, platformName: android}, deviceApiLevel: 31, deviceManufacturer: realme, deviceModel: RMX3081, deviceName: 21b7da02, deviceScreenDensity: 480, deviceScreenSize: 1080x2400, deviceUDID: 21b7da02, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, noReset: true, pixelRatio: 3, platform: LINUX, platformName: Android, platformVersion: 12, statBarHeight: 108, takesScreenshot: true, viewportRect: {height: 2050, left: 0, top: 108, width: 1080}, warnings: {}, webStorageEnabled: false}
+Session ID: c059f71d-f170-4045-a63d-70493a465e75
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:250)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:45)
+at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+at org.openqa.selenium.remote.RemoteWebDriver.quit(RemoteWebDriver.java:452)
+at automate.quickstart.EditProfile.tearDown(EditProfile.java:69)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:700)
+at org.testng.internal.TestInvoker.runAfterGroupsConfigurations(TestInvoker.java:676)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:660)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.WebDriverException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ProfileNamelessThanthree -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:automate.quickstart.EditProfile@24313fcc]" started-at="2023-05-08T15:46:54 IST" name="tearDown" finished-at="2023-05-08T15:46:54 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:automate.quickstart.EditProfile@24313fcc]" started-at="2023-05-08T15:46:54 IST" name="setup" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1683541014561" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="DOB_negativeOutofrange1()[pri:6, instance:automate.quickstart.EditProfile@24313fcc]" started-at="2023-05-08T15:46:54 IST" name="DOB_negativeOutofrange1" finished-at="2023-05-08T15:46:54 IST" duration-ms="0" status="SKIP">
+          <exception class="org.openqa.selenium.WebDriverException">
+            <message>
+              <![CDATA[An unknown server-side error occurred while processing the command. Original error: Error executing adbExec. Original error: 'Command 'C:\\Users\\AdityaRaj\\Desktop\\sdk\\platform-tools\\adb.exe -P 5037 -s 21b7da02 shell 'settings delete global hidden_api_policy_pre_p_apps;settings delete global hidden_api_policy_p_apps;settings delete global hidden_api_policy'' exited with code 1'; Command output: adb.exe: device '21b7da02' not found
+
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LAPTOP-T69AHU1A', ip: '192.168.0.198', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {adbExecTimeout: 60000, appActivity: com.stocky_dodo.app.MainAct..., appPackage: com.stocky_dodo.app, appWaitForLaunch: false, automationName: UiAutomator2, databaseEnabled: false, desired: {adbExecTimeout: 60000, appActivity: com.stocky_dodo.app.MainAct..., appPackage: com.stocky_dodo.app, appWaitForLaunch: false, automationName: UiAutomator2, deviceName: realme RMX3081, noReset: true, platformName: android}, deviceApiLevel: 31, deviceManufacturer: realme, deviceModel: RMX3081, deviceName: 21b7da02, deviceScreenDensity: 480, deviceScreenSize: 1080x2400, deviceUDID: 21b7da02, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, noReset: true, pixelRatio: 3, platform: LINUX, platformName: Android, platformVersion: 12, statBarHeight: 108, takesScreenshot: true, viewportRect: {height: 2050, left: 0, top: 108, width: 1080}, warnings: {}, webStorageEnabled: false}
+Session ID: c059f71d-f170-4045-a63d-70493a465e75]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.WebDriverException: An unknown server-side error occurred while processing the command. Original error: Error executing adbExec. Original error: 'Command 'C:\\Users\\AdityaRaj\\Desktop\\sdk\\platform-tools\\adb.exe -P 5037 -s 21b7da02 shell 'settings delete global hidden_api_policy_pre_p_apps;settings delete global hidden_api_policy_p_apps;settings delete global hidden_api_policy'' exited with code 1'; Command output: adb.exe: device '21b7da02' not found
+
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LAPTOP-T69AHU1A', ip: '192.168.0.198', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {adbExecTimeout: 60000, appActivity: com.stocky_dodo.app.MainAct..., appPackage: com.stocky_dodo.app, appWaitForLaunch: false, automationName: UiAutomator2, databaseEnabled: false, desired: {adbExecTimeout: 60000, appActivity: com.stocky_dodo.app.MainAct..., appPackage: com.stocky_dodo.app, appWaitForLaunch: false, automationName: UiAutomator2, deviceName: realme RMX3081, noReset: true, platformName: android}, deviceApiLevel: 31, deviceManufacturer: realme, deviceModel: RMX3081, deviceName: 21b7da02, deviceScreenDensity: 480, deviceScreenSize: 1080x2400, deviceUDID: 21b7da02, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, noReset: true, pixelRatio: 3, platform: LINUX, platformName: Android, platformVersion: 12, statBarHeight: 108, takesScreenshot: true, viewportRect: {height: 2050, left: 0, top: 108, width: 1080}, warnings: {}, webStorageEnabled: false}
+Session ID: c059f71d-f170-4045-a63d-70493a465e75
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:250)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:45)
+at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+at org.openqa.selenium.remote.RemoteWebDriver.quit(RemoteWebDriver.java:452)
+at automate.quickstart.EditProfile.tearDown(EditProfile.java:69)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:700)
+at org.testng.internal.TestInvoker.runAfterGroupsConfigurations(TestInvoker.java:676)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:660)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.WebDriverException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- DOB_negativeOutofrange1 -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:automate.quickstart.EditProfile@24313fcc]" started-at="2023-05-08T15:46:54 IST" name="tearDown" finished-at="2023-05-08T15:46:54 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:automate.quickstart.EditProfile@24313fcc]" started-at="2023-05-08T15:46:54 IST" name="setup" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1683541014565" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="DOB_negativeOutOfRange2()[pri:7, instance:automate.quickstart.EditProfile@24313fcc]" started-at="2023-05-08T15:46:54 IST" name="DOB_negativeOutOfRange2" finished-at="2023-05-08T15:46:54 IST" duration-ms="0" status="SKIP">
+          <exception class="org.openqa.selenium.WebDriverException">
+            <message>
+              <![CDATA[An unknown server-side error occurred while processing the command. Original error: Error executing adbExec. Original error: 'Command 'C:\\Users\\AdityaRaj\\Desktop\\sdk\\platform-tools\\adb.exe -P 5037 -s 21b7da02 shell 'settings delete global hidden_api_policy_pre_p_apps;settings delete global hidden_api_policy_p_apps;settings delete global hidden_api_policy'' exited with code 1'; Command output: adb.exe: device '21b7da02' not found
+
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LAPTOP-T69AHU1A', ip: '192.168.0.198', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {adbExecTimeout: 60000, appActivity: com.stocky_dodo.app.MainAct..., appPackage: com.stocky_dodo.app, appWaitForLaunch: false, automationName: UiAutomator2, databaseEnabled: false, desired: {adbExecTimeout: 60000, appActivity: com.stocky_dodo.app.MainAct..., appPackage: com.stocky_dodo.app, appWaitForLaunch: false, automationName: UiAutomator2, deviceName: realme RMX3081, noReset: true, platformName: android}, deviceApiLevel: 31, deviceManufacturer: realme, deviceModel: RMX3081, deviceName: 21b7da02, deviceScreenDensity: 480, deviceScreenSize: 1080x2400, deviceUDID: 21b7da02, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, noReset: true, pixelRatio: 3, platform: LINUX, platformName: Android, platformVersion: 12, statBarHeight: 108, takesScreenshot: true, viewportRect: {height: 2050, left: 0, top: 108, width: 1080}, warnings: {}, webStorageEnabled: false}
+Session ID: c059f71d-f170-4045-a63d-70493a465e75]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.WebDriverException: An unknown server-side error occurred while processing the command. Original error: Error executing adbExec. Original error: 'Command 'C:\\Users\\AdityaRaj\\Desktop\\sdk\\platform-tools\\adb.exe -P 5037 -s 21b7da02 shell 'settings delete global hidden_api_policy_pre_p_apps;settings delete global hidden_api_policy_p_apps;settings delete global hidden_api_policy'' exited with code 1'; Command output: adb.exe: device '21b7da02' not found
+
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LAPTOP-T69AHU1A', ip: '192.168.0.198', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {adbExecTimeout: 60000, appActivity: com.stocky_dodo.app.MainAct..., appPackage: com.stocky_dodo.app, appWaitForLaunch: false, automationName: UiAutomator2, databaseEnabled: false, desired: {adbExecTimeout: 60000, appActivity: com.stocky_dodo.app.MainAct..., appPackage: com.stocky_dodo.app, appWaitForLaunch: false, automationName: UiAutomator2, deviceName: realme RMX3081, noReset: true, platformName: android}, deviceApiLevel: 31, deviceManufacturer: realme, deviceModel: RMX3081, deviceName: 21b7da02, deviceScreenDensity: 480, deviceScreenSize: 1080x2400, deviceUDID: 21b7da02, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, noReset: true, pixelRatio: 3, platform: LINUX, platformName: Android, platformVersion: 12, statBarHeight: 108, takesScreenshot: true, viewportRect: {height: 2050, left: 0, top: 108, width: 1080}, warnings: {}, webStorageEnabled: false}
+Session ID: c059f71d-f170-4045-a63d-70493a465e75
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:250)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:45)
+at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+at org.openqa.selenium.remote.RemoteWebDriver.quit(RemoteWebDriver.java:452)
+at automate.quickstart.EditProfile.tearDown(EditProfile.java:69)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:700)
+at org.testng.internal.TestInvoker.runAfterGroupsConfigurations(TestInvoker.java:676)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:660)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.WebDriverException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- DOB_negativeOutOfRange2 -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:automate.quickstart.EditProfile@24313fcc]" started-at="2023-05-08T15:46:54 IST" name="tearDown" finished-at="2023-05-08T15:46:54 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:automate.quickstart.EditProfile@24313fcc]" started-at="2023-05-08T15:46:54 IST" name="setup" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1683541014570" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="Gender()[pri:8, instance:automate.quickstart.EditProfile@24313fcc]" started-at="2023-05-08T15:46:54 IST" name="Gender" finished-at="2023-05-08T15:46:54 IST" duration-ms="0" status="SKIP">
+          <exception class="org.openqa.selenium.WebDriverException">
+            <message>
+              <![CDATA[An unknown server-side error occurred while processing the command. Original error: Error executing adbExec. Original error: 'Command 'C:\\Users\\AdityaRaj\\Desktop\\sdk\\platform-tools\\adb.exe -P 5037 -s 21b7da02 shell 'settings delete global hidden_api_policy_pre_p_apps;settings delete global hidden_api_policy_p_apps;settings delete global hidden_api_policy'' exited with code 1'; Command output: adb.exe: device '21b7da02' not found
+
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LAPTOP-T69AHU1A', ip: '192.168.0.198', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {adbExecTimeout: 60000, appActivity: com.stocky_dodo.app.MainAct..., appPackage: com.stocky_dodo.app, appWaitForLaunch: false, automationName: UiAutomator2, databaseEnabled: false, desired: {adbExecTimeout: 60000, appActivity: com.stocky_dodo.app.MainAct..., appPackage: com.stocky_dodo.app, appWaitForLaunch: false, automationName: UiAutomator2, deviceName: realme RMX3081, noReset: true, platformName: android}, deviceApiLevel: 31, deviceManufacturer: realme, deviceModel: RMX3081, deviceName: 21b7da02, deviceScreenDensity: 480, deviceScreenSize: 1080x2400, deviceUDID: 21b7da02, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, noReset: true, pixelRatio: 3, platform: LINUX, platformName: Android, platformVersion: 12, statBarHeight: 108, takesScreenshot: true, viewportRect: {height: 2050, left: 0, top: 108, width: 1080}, warnings: {}, webStorageEnabled: false}
+Session ID: c059f71d-f170-4045-a63d-70493a465e75]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.WebDriverException: An unknown server-side error occurred while processing the command. Original error: Error executing adbExec. Original error: 'Command 'C:\\Users\\AdityaRaj\\Desktop\\sdk\\platform-tools\\adb.exe -P 5037 -s 21b7da02 shell 'settings delete global hidden_api_policy_pre_p_apps;settings delete global hidden_api_policy_p_apps;settings delete global hidden_api_policy'' exited with code 1'; Command output: adb.exe: device '21b7da02' not found
+
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LAPTOP-T69AHU1A', ip: '192.168.0.198', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {adbExecTimeout: 60000, appActivity: com.stocky_dodo.app.MainAct..., appPackage: com.stocky_dodo.app, appWaitForLaunch: false, automationName: UiAutomator2, databaseEnabled: false, desired: {adbExecTimeout: 60000, appActivity: com.stocky_dodo.app.MainAct..., appPackage: com.stocky_dodo.app, appWaitForLaunch: false, automationName: UiAutomator2, deviceName: realme RMX3081, noReset: true, platformName: android}, deviceApiLevel: 31, deviceManufacturer: realme, deviceModel: RMX3081, deviceName: 21b7da02, deviceScreenDensity: 480, deviceScreenSize: 1080x2400, deviceUDID: 21b7da02, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, noReset: true, pixelRatio: 3, platform: LINUX, platformName: Android, platformVersion: 12, statBarHeight: 108, takesScreenshot: true, viewportRect: {height: 2050, left: 0, top: 108, width: 1080}, warnings: {}, webStorageEnabled: false}
+Session ID: c059f71d-f170-4045-a63d-70493a465e75
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:250)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:45)
+at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+at org.openqa.selenium.remote.RemoteWebDriver.quit(RemoteWebDriver.java:452)
+at automate.quickstart.EditProfile.tearDown(EditProfile.java:69)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:700)
+at org.testng.internal.TestInvoker.runAfterGroupsConfigurations(TestInvoker.java:676)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:660)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.WebDriverException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Gender -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:automate.quickstart.EditProfile@24313fcc]" started-at="2023-05-08T15:46:54 IST" name="setup" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1683541014573" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:automate.quickstart.EditProfile@24313fcc]" started-at="2023-05-08T15:46:54 IST" name="tearDown" finished-at="2023-05-08T15:46:54 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method signature="Account_settings_Edit_Profile()[pri:9, instance:automate.quickstart.EditProfile@24313fcc]" started-at="2023-05-08T15:46:54 IST" name="Account_settings_Edit_Profile" finished-at="2023-05-08T15:46:54 IST" duration-ms="0" status="SKIP">
+          <exception class="org.openqa.selenium.WebDriverException">
+            <message>
+              <![CDATA[An unknown server-side error occurred while processing the command. Original error: Error executing adbExec. Original error: 'Command 'C:\\Users\\AdityaRaj\\Desktop\\sdk\\platform-tools\\adb.exe -P 5037 -s 21b7da02 shell 'settings delete global hidden_api_policy_pre_p_apps;settings delete global hidden_api_policy_p_apps;settings delete global hidden_api_policy'' exited with code 1'; Command output: adb.exe: device '21b7da02' not found
+
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LAPTOP-T69AHU1A', ip: '192.168.0.198', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {adbExecTimeout: 60000, appActivity: com.stocky_dodo.app.MainAct..., appPackage: com.stocky_dodo.app, appWaitForLaunch: false, automationName: UiAutomator2, databaseEnabled: false, desired: {adbExecTimeout: 60000, appActivity: com.stocky_dodo.app.MainAct..., appPackage: com.stocky_dodo.app, appWaitForLaunch: false, automationName: UiAutomator2, deviceName: realme RMX3081, noReset: true, platformName: android}, deviceApiLevel: 31, deviceManufacturer: realme, deviceModel: RMX3081, deviceName: 21b7da02, deviceScreenDensity: 480, deviceScreenSize: 1080x2400, deviceUDID: 21b7da02, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, noReset: true, pixelRatio: 3, platform: LINUX, platformName: Android, platformVersion: 12, statBarHeight: 108, takesScreenshot: true, viewportRect: {height: 2050, left: 0, top: 108, width: 1080}, warnings: {}, webStorageEnabled: false}
+Session ID: c059f71d-f170-4045-a63d-70493a465e75]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.WebDriverException: An unknown server-side error occurred while processing the command. Original error: Error executing adbExec. Original error: 'Command 'C:\\Users\\AdityaRaj\\Desktop\\sdk\\platform-tools\\adb.exe -P 5037 -s 21b7da02 shell 'settings delete global hidden_api_policy_pre_p_apps;settings delete global hidden_api_policy_p_apps;settings delete global hidden_api_policy'' exited with code 1'; Command output: adb.exe: device '21b7da02' not found
+
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LAPTOP-T69AHU1A', ip: '192.168.0.198', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {adbExecTimeout: 60000, appActivity: com.stocky_dodo.app.MainAct..., appPackage: com.stocky_dodo.app, appWaitForLaunch: false, automationName: UiAutomator2, databaseEnabled: false, desired: {adbExecTimeout: 60000, appActivity: com.stocky_dodo.app.MainAct..., appPackage: com.stocky_dodo.app, appWaitForLaunch: false, automationName: UiAutomator2, deviceName: realme RMX3081, noReset: true, platformName: android}, deviceApiLevel: 31, deviceManufacturer: realme, deviceModel: RMX3081, deviceName: 21b7da02, deviceScreenDensity: 480, deviceScreenSize: 1080x2400, deviceUDID: 21b7da02, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, noReset: true, pixelRatio: 3, platform: LINUX, platformName: Android, platformVersion: 12, statBarHeight: 108, takesScreenshot: true, viewportRect: {height: 2050, left: 0, top: 108, width: 1080}, warnings: {}, webStorageEnabled: false}
+Session ID: c059f71d-f170-4045-a63d-70493a465e75
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:250)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:45)
+at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+at org.openqa.selenium.remote.RemoteWebDriver.quit(RemoteWebDriver.java:452)
+at automate.quickstart.EditProfile.tearDown(EditProfile.java:69)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:700)
+at org.testng.internal.TestInvoker.runAfterGroupsConfigurations(TestInvoker.java:676)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:660)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.WebDriverException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Account_settings_Edit_Profile -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:automate.quickstart.EditProfile@24313fcc]" started-at="2023-05-08T15:46:54 IST" name="tearDown" finished-at="2023-05-08T15:46:54 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method signature="ProfileDeepLinking()[pri:10, instance:automate.quickstart.EditProfile@24313fcc]" started-at="2023-05-08T15:46:54 IST" name="ProfileDeepLinking" finished-at="2023-05-08T15:46:54 IST" duration-ms="0" status="SKIP">
+          <exception class="org.openqa.selenium.WebDriverException">
+            <message>
+              <![CDATA[An unknown server-side error occurred while processing the command. Original error: Error executing adbExec. Original error: 'Command 'C:\\Users\\AdityaRaj\\Desktop\\sdk\\platform-tools\\adb.exe -P 5037 -s 21b7da02 shell 'settings delete global hidden_api_policy_pre_p_apps;settings delete global hidden_api_policy_p_apps;settings delete global hidden_api_policy'' exited with code 1'; Command output: adb.exe: device '21b7da02' not found
+
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LAPTOP-T69AHU1A', ip: '192.168.0.198', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {adbExecTimeout: 60000, appActivity: com.stocky_dodo.app.MainAct..., appPackage: com.stocky_dodo.app, appWaitForLaunch: false, automationName: UiAutomator2, databaseEnabled: false, desired: {adbExecTimeout: 60000, appActivity: com.stocky_dodo.app.MainAct..., appPackage: com.stocky_dodo.app, appWaitForLaunch: false, automationName: UiAutomator2, deviceName: realme RMX3081, noReset: true, platformName: android}, deviceApiLevel: 31, deviceManufacturer: realme, deviceModel: RMX3081, deviceName: 21b7da02, deviceScreenDensity: 480, deviceScreenSize: 1080x2400, deviceUDID: 21b7da02, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, noReset: true, pixelRatio: 3, platform: LINUX, platformName: Android, platformVersion: 12, statBarHeight: 108, takesScreenshot: true, viewportRect: {height: 2050, left: 0, top: 108, width: 1080}, warnings: {}, webStorageEnabled: false}
+Session ID: c059f71d-f170-4045-a63d-70493a465e75]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.WebDriverException: An unknown server-side error occurred while processing the command. Original error: Error executing adbExec. Original error: 'Command 'C:\\Users\\AdityaRaj\\Desktop\\sdk\\platform-tools\\adb.exe -P 5037 -s 21b7da02 shell 'settings delete global hidden_api_policy_pre_p_apps;settings delete global hidden_api_policy_p_apps;settings delete global hidden_api_policy'' exited with code 1'; Command output: adb.exe: device '21b7da02' not found
+
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LAPTOP-T69AHU1A', ip: '192.168.0.198', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {adbExecTimeout: 60000, appActivity: com.stocky_dodo.app.MainAct..., appPackage: com.stocky_dodo.app, appWaitForLaunch: false, automationName: UiAutomator2, databaseEnabled: false, desired: {adbExecTimeout: 60000, appActivity: com.stocky_dodo.app.MainAct..., appPackage: com.stocky_dodo.app, appWaitForLaunch: false, automationName: UiAutomator2, deviceName: realme RMX3081, noReset: true, platformName: android}, deviceApiLevel: 31, deviceManufacturer: realme, deviceModel: RMX3081, deviceName: 21b7da02, deviceScreenDensity: 480, deviceScreenSize: 1080x2400, deviceUDID: 21b7da02, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, noReset: true, pixelRatio: 3, platform: LINUX, platformName: Android, platformVersion: 12, statBarHeight: 108, takesScreenshot: true, viewportRect: {height: 2050, left: 0, top: 108, width: 1080}, warnings: {}, webStorageEnabled: false}
+Session ID: c059f71d-f170-4045-a63d-70493a465e75
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:250)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:45)
+at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+at org.openqa.selenium.remote.RemoteWebDriver.quit(RemoteWebDriver.java:452)
+at automate.quickstart.EditProfile.tearDown(EditProfile.java:69)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:700)
+at org.testng.internal.TestInvoker.runAfterGroupsConfigurations(TestInvoker.java:676)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:660)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.WebDriverException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ProfileDeepLinking -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:automate.quickstart.EditProfile@24313fcc]" started-at="2023-05-08T15:46:54 IST" name="setup" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1683541014577" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:automate.quickstart.EditProfile@24313fcc]" started-at="2023-05-08T15:46:54 IST" name="tearDown" finished-at="2023-05-08T15:46:54 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:automate.quickstart.EditProfile@24313fcc]" started-at="2023-05-08T15:46:54 IST" name="setup" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1683541014581" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="MobileNumberNotEditable()[pri:11, instance:automate.quickstart.EditProfile@24313fcc]" started-at="2023-05-08T15:46:54 IST" name="MobileNumberNotEditable" finished-at="2023-05-08T15:46:54 IST" duration-ms="0" status="SKIP">
+          <exception class="org.openqa.selenium.WebDriverException">
+            <message>
+              <![CDATA[An unknown server-side error occurred while processing the command. Original error: Error executing adbExec. Original error: 'Command 'C:\\Users\\AdityaRaj\\Desktop\\sdk\\platform-tools\\adb.exe -P 5037 -s 21b7da02 shell 'settings delete global hidden_api_policy_pre_p_apps;settings delete global hidden_api_policy_p_apps;settings delete global hidden_api_policy'' exited with code 1'; Command output: adb.exe: device '21b7da02' not found
+
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LAPTOP-T69AHU1A', ip: '192.168.0.198', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {adbExecTimeout: 60000, appActivity: com.stocky_dodo.app.MainAct..., appPackage: com.stocky_dodo.app, appWaitForLaunch: false, automationName: UiAutomator2, databaseEnabled: false, desired: {adbExecTimeout: 60000, appActivity: com.stocky_dodo.app.MainAct..., appPackage: com.stocky_dodo.app, appWaitForLaunch: false, automationName: UiAutomator2, deviceName: realme RMX3081, noReset: true, platformName: android}, deviceApiLevel: 31, deviceManufacturer: realme, deviceModel: RMX3081, deviceName: 21b7da02, deviceScreenDensity: 480, deviceScreenSize: 1080x2400, deviceUDID: 21b7da02, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, noReset: true, pixelRatio: 3, platform: LINUX, platformName: Android, platformVersion: 12, statBarHeight: 108, takesScreenshot: true, viewportRect: {height: 2050, left: 0, top: 108, width: 1080}, warnings: {}, webStorageEnabled: false}
+Session ID: c059f71d-f170-4045-a63d-70493a465e75]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.WebDriverException: An unknown server-side error occurred while processing the command. Original error: Error executing adbExec. Original error: 'Command 'C:\\Users\\AdityaRaj\\Desktop\\sdk\\platform-tools\\adb.exe -P 5037 -s 21b7da02 shell 'settings delete global hidden_api_policy_pre_p_apps;settings delete global hidden_api_policy_p_apps;settings delete global hidden_api_policy'' exited with code 1'; Command output: adb.exe: device '21b7da02' not found
+
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LAPTOP-T69AHU1A', ip: '192.168.0.198', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {adbExecTimeout: 60000, appActivity: com.stocky_dodo.app.MainAct..., appPackage: com.stocky_dodo.app, appWaitForLaunch: false, automationName: UiAutomator2, databaseEnabled: false, desired: {adbExecTimeout: 60000, appActivity: com.stocky_dodo.app.MainAct..., appPackage: com.stocky_dodo.app, appWaitForLaunch: false, automationName: UiAutomator2, deviceName: realme RMX3081, noReset: true, platformName: android}, deviceApiLevel: 31, deviceManufacturer: realme, deviceModel: RMX3081, deviceName: 21b7da02, deviceScreenDensity: 480, deviceScreenSize: 1080x2400, deviceUDID: 21b7da02, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, noReset: true, pixelRatio: 3, platform: LINUX, platformName: Android, platformVersion: 12, statBarHeight: 108, takesScreenshot: true, viewportRect: {height: 2050, left: 0, top: 108, width: 1080}, warnings: {}, webStorageEnabled: false}
+Session ID: c059f71d-f170-4045-a63d-70493a465e75
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:250)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:45)
+at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+at org.openqa.selenium.remote.RemoteWebDriver.quit(RemoteWebDriver.java:452)
+at automate.quickstart.EditProfile.tearDown(EditProfile.java:69)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:700)
+at org.testng.internal.TestInvoker.runAfterGroupsConfigurations(TestInvoker.java:676)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:660)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.WebDriverException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- MobileNumberNotEditable -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:automate.quickstart.EditProfile@24313fcc]" started-at="2023-05-08T15:46:54 IST" name="tearDown" finished-at="2023-05-08T15:46:54 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:automate.quickstart.EditProfile@24313fcc]" started-at="2023-05-08T15:46:54 IST" name="setup" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1683541014584" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="editProfile()[pri:12, instance:automate.quickstart.EditProfile@24313fcc]" started-at="2023-05-08T15:46:54 IST" name="editProfile" finished-at="2023-05-08T15:46:54 IST" duration-ms="0" status="SKIP">
+          <exception class="org.openqa.selenium.WebDriverException">
+            <message>
+              <![CDATA[An unknown server-side error occurred while processing the command. Original error: Error executing adbExec. Original error: 'Command 'C:\\Users\\AdityaRaj\\Desktop\\sdk\\platform-tools\\adb.exe -P 5037 -s 21b7da02 shell 'settings delete global hidden_api_policy_pre_p_apps;settings delete global hidden_api_policy_p_apps;settings delete global hidden_api_policy'' exited with code 1'; Command output: adb.exe: device '21b7da02' not found
+
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LAPTOP-T69AHU1A', ip: '192.168.0.198', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {adbExecTimeout: 60000, appActivity: com.stocky_dodo.app.MainAct..., appPackage: com.stocky_dodo.app, appWaitForLaunch: false, automationName: UiAutomator2, databaseEnabled: false, desired: {adbExecTimeout: 60000, appActivity: com.stocky_dodo.app.MainAct..., appPackage: com.stocky_dodo.app, appWaitForLaunch: false, automationName: UiAutomator2, deviceName: realme RMX3081, noReset: true, platformName: android}, deviceApiLevel: 31, deviceManufacturer: realme, deviceModel: RMX3081, deviceName: 21b7da02, deviceScreenDensity: 480, deviceScreenSize: 1080x2400, deviceUDID: 21b7da02, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, noReset: true, pixelRatio: 3, platform: LINUX, platformName: Android, platformVersion: 12, statBarHeight: 108, takesScreenshot: true, viewportRect: {height: 2050, left: 0, top: 108, width: 1080}, warnings: {}, webStorageEnabled: false}
+Session ID: c059f71d-f170-4045-a63d-70493a465e75]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.WebDriverException: An unknown server-side error occurred while processing the command. Original error: Error executing adbExec. Original error: 'Command 'C:\\Users\\AdityaRaj\\Desktop\\sdk\\platform-tools\\adb.exe -P 5037 -s 21b7da02 shell 'settings delete global hidden_api_policy_pre_p_apps;settings delete global hidden_api_policy_p_apps;settings delete global hidden_api_policy'' exited with code 1'; Command output: adb.exe: device '21b7da02' not found
+
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LAPTOP-T69AHU1A', ip: '192.168.0.198', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {adbExecTimeout: 60000, appActivity: com.stocky_dodo.app.MainAct..., appPackage: com.stocky_dodo.app, appWaitForLaunch: false, automationName: UiAutomator2, databaseEnabled: false, desired: {adbExecTimeout: 60000, appActivity: com.stocky_dodo.app.MainAct..., appPackage: com.stocky_dodo.app, appWaitForLaunch: false, automationName: UiAutomator2, deviceName: realme RMX3081, noReset: true, platformName: android}, deviceApiLevel: 31, deviceManufacturer: realme, deviceModel: RMX3081, deviceName: 21b7da02, deviceScreenDensity: 480, deviceScreenSize: 1080x2400, deviceUDID: 21b7da02, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, noReset: true, pixelRatio: 3, platform: LINUX, platformName: Android, platformVersion: 12, statBarHeight: 108, takesScreenshot: true, viewportRect: {height: 2050, left: 0, top: 108, width: 1080}, warnings: {}, webStorageEnabled: false}
+Session ID: c059f71d-f170-4045-a63d-70493a465e75
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:250)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:45)
+at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+at org.openqa.selenium.remote.RemoteWebDriver.quit(RemoteWebDriver.java:452)
+at automate.quickstart.EditProfile.tearDown(EditProfile.java:69)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:700)
+at org.testng.internal.TestInvoker.runAfterGroupsConfigurations(TestInvoker.java:676)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:660)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.WebDriverException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- editProfile -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:automate.quickstart.EditProfile@24313fcc]" started-at="2023-05-08T15:46:54 IST" name="tearDown" finished-at="2023-05-08T15:46:54 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:automate.quickstart.EditProfile@24313fcc]" started-at="2023-05-08T15:46:54 IST" name="setup" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1683541014587" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="ProfileDeepLinkingInApp()[pri:13, instance:automate.quickstart.EditProfile@24313fcc]" started-at="2023-05-08T15:46:54 IST" name="ProfileDeepLinkingInApp" finished-at="2023-05-08T15:46:54 IST" duration-ms="0" status="SKIP">
+          <exception class="org.openqa.selenium.WebDriverException">
+            <message>
+              <![CDATA[An unknown server-side error occurred while processing the command. Original error: Error executing adbExec. Original error: 'Command 'C:\\Users\\AdityaRaj\\Desktop\\sdk\\platform-tools\\adb.exe -P 5037 -s 21b7da02 shell 'settings delete global hidden_api_policy_pre_p_apps;settings delete global hidden_api_policy_p_apps;settings delete global hidden_api_policy'' exited with code 1'; Command output: adb.exe: device '21b7da02' not found
+
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LAPTOP-T69AHU1A', ip: '192.168.0.198', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {adbExecTimeout: 60000, appActivity: com.stocky_dodo.app.MainAct..., appPackage: com.stocky_dodo.app, appWaitForLaunch: false, automationName: UiAutomator2, databaseEnabled: false, desired: {adbExecTimeout: 60000, appActivity: com.stocky_dodo.app.MainAct..., appPackage: com.stocky_dodo.app, appWaitForLaunch: false, automationName: UiAutomator2, deviceName: realme RMX3081, noReset: true, platformName: android}, deviceApiLevel: 31, deviceManufacturer: realme, deviceModel: RMX3081, deviceName: 21b7da02, deviceScreenDensity: 480, deviceScreenSize: 1080x2400, deviceUDID: 21b7da02, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, noReset: true, pixelRatio: 3, platform: LINUX, platformName: Android, platformVersion: 12, statBarHeight: 108, takesScreenshot: true, viewportRect: {height: 2050, left: 0, top: 108, width: 1080}, warnings: {}, webStorageEnabled: false}
+Session ID: c059f71d-f170-4045-a63d-70493a465e75]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.WebDriverException: An unknown server-side error occurred while processing the command. Original error: Error executing adbExec. Original error: 'Command 'C:\\Users\\AdityaRaj\\Desktop\\sdk\\platform-tools\\adb.exe -P 5037 -s 21b7da02 shell 'settings delete global hidden_api_policy_pre_p_apps;settings delete global hidden_api_policy_p_apps;settings delete global hidden_api_policy'' exited with code 1'; Command output: adb.exe: device '21b7da02' not found
+
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LAPTOP-T69AHU1A', ip: '192.168.0.198', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {adbExecTimeout: 60000, appActivity: com.stocky_dodo.app.MainAct..., appPackage: com.stocky_dodo.app, appWaitForLaunch: false, automationName: UiAutomator2, databaseEnabled: false, desired: {adbExecTimeout: 60000, appActivity: com.stocky_dodo.app.MainAct..., appPackage: com.stocky_dodo.app, appWaitForLaunch: false, automationName: UiAutomator2, deviceName: realme RMX3081, noReset: true, platformName: android}, deviceApiLevel: 31, deviceManufacturer: realme, deviceModel: RMX3081, deviceName: 21b7da02, deviceScreenDensity: 480, deviceScreenSize: 1080x2400, deviceUDID: 21b7da02, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, noReset: true, pixelRatio: 3, platform: LINUX, platformName: Android, platformVersion: 12, statBarHeight: 108, takesScreenshot: true, viewportRect: {height: 2050, left: 0, top: 108, width: 1080}, warnings: {}, webStorageEnabled: false}
+Session ID: c059f71d-f170-4045-a63d-70493a465e75
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:250)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:45)
+at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+at org.openqa.selenium.remote.RemoteWebDriver.quit(RemoteWebDriver.java:452)
+at automate.quickstart.EditProfile.tearDown(EditProfile.java:69)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:700)
+at org.testng.internal.TestInvoker.runAfterGroupsConfigurations(TestInvoker.java:676)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:660)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.WebDriverException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ProfileDeepLinkingInApp -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:automate.quickstart.EditProfile@24313fcc]" started-at="2023-05-08T15:46:54 IST" name="tearDown" finished-at="2023-05-08T15:46:54 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
       </class> <!-- automate.quickstart.EditProfile -->
       <class name="automate.quickstart.Registration">
-        <test-method signature="registrationNegativeTestCaseZeroInput()[pri:2, instance:automate.quickstart.Registration@20deea7f]" started-at="2023-04-20T16:41:55 IST" name="registrationNegativeTestCaseZeroInput" finished-at="2023-04-20T16:41:55 IST" duration-ms="225" status="FAIL">
-          <exception class="java.lang.NullPointerException">
+        <test-method signature="registrationLessThanTen()[pri:1, instance:automate.quickstart.Registration@24269709]" started-at="2023-05-08T15:41:42 IST" name="registrationLessThanTen" finished-at="2023-05-08T15:42:05 IST" duration-ms="22787" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
-              <![CDATA[Cannot invoke "io.appium.java_client.android.AndroidDriver.findElement(org.openqa.selenium.By)" because "this.driver" is null]]>
+              <![CDATA[An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LAPTOP-T69AHU1A', ip: '192.168.0.198', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {adbExecTimeout: 60000, appActivity: com.stocky_dodo.app.MainAct..., appPackage: com.stocky_dodo.app, appWaitForLaunch: false, automationName: UiAutomator2, databaseEnabled: false, desired: {adbExecTimeout: 60000, appActivity: com.stocky_dodo.app.MainAct..., appPackage: com.stocky_dodo.app, appWaitForLaunch: false, automationName: UiAutomator2, deviceName: realme RMX3081, noReset: true, platformName: android}, deviceApiLevel: 31, deviceManufacturer: realme, deviceModel: RMX3081, deviceName: 21b7da02, deviceScreenDensity: 480, deviceScreenSize: 1080x2400, deviceUDID: 21b7da02, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, noReset: true, pixelRatio: 3, platform: LINUX, platformName: Android, platformVersion: 12, statBarHeight: 108, takesScreenshot: true, viewportRect: {height: 2050, left: 0, top: 108, width: 1080}, warnings: {}, webStorageEnabled: false}
+Session ID: ba85bac7-508e-437c-b837-2295b2609326
+*** Element info: {Using=xpath, value=//android.widget.LinearLayout[@content-desc='Choose an Account']/android.widget.LinearLayout/android.widget.Button}]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException: Cannot invoke "io.appium.java_client.android.AndroidDriver.findElement(org.openqa.selenium.By)" because "this.driver" is null
-at automate.quickstart.Registration.registrationNegativeTestCaseZeroInput(Registration.java:138)
+              <![CDATA[org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LAPTOP-T69AHU1A', ip: '192.168.0.198', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {adbExecTimeout: 60000, appActivity: com.stocky_dodo.app.MainAct..., appPackage: com.stocky_dodo.app, appWaitForLaunch: false, automationName: UiAutomator2, databaseEnabled: false, desired: {adbExecTimeout: 60000, appActivity: com.stocky_dodo.app.MainAct..., appPackage: com.stocky_dodo.app, appWaitForLaunch: false, automationName: UiAutomator2, deviceName: realme RMX3081, noReset: true, platformName: android}, deviceApiLevel: 31, deviceManufacturer: realme, deviceModel: RMX3081, deviceName: 21b7da02, deviceScreenDensity: 480, deviceScreenSize: 1080x2400, deviceUDID: 21b7da02, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, noReset: true, pixelRatio: 3, platform: LINUX, platformName: Android, platformVersion: 12, statBarHeight: 108, takesScreenshot: true, viewportRect: {height: 2050, left: 0, top: 108, width: 1080}, warnings: {}, webStorageEnabled: false}
+Session ID: ba85bac7-508e-437c-b837-2295b2609326
+*** Element info: {Using=xpath, value=//android.widget.LinearLayout[@content-desc='Choose an Account']/android.widget.LinearLayout/android.widget.Button}
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:250)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:41)
+at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:61)
+at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+at io.appium.java_client.DefaultGenericMobileDriver.findElementByXPath(DefaultGenericMobileDriver.java:151)
+at io.appium.java_client.AppiumDriver.findElementByXPath(AppiumDriver.java:1)
+at io.appium.java_client.android.AndroidDriver.findElementByXPath(AndroidDriver.java:1)
+at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:57)
+at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+at automate.quickstart.Registration.registrationLessThanTen(Registration.java:104)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -51,262 +1011,10 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- registrationNegativeTestCaseZeroInput -->
-        <test-method signature="RegistrationTermandConditionNegativeTestCase()[pri:3, instance:automate.quickstart.Registration@20deea7f]" started-at="2023-04-20T16:41:55 IST" name="RegistrationTermandConditionNegativeTestCase" finished-at="2023-04-20T16:42:00 IST" duration-ms="5006" status="FAIL">
-          <exception class="java.lang.NullPointerException">
-            <message>
-              <![CDATA[Cannot invoke "io.appium.java_client.android.AndroidDriver.findElement(org.openqa.selenium.By)" because "this.driver" is null]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException: Cannot invoke "io.appium.java_client.android.AndroidDriver.findElement(org.openqa.selenium.By)" because "this.driver" is null
-at automate.quickstart.Registration.RegistrationTermandConditionNegativeTestCase(Registration.java:344)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:794)
-at org.testng.TestRunner.run(TestRunner.java:596)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-at org.testng.TestNG.runSuites(TestNG.java:1063)
-at org.testng.TestNG.run(TestNG.java:1031)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- RegistrationTermandConditionNegativeTestCase -->
-        <test-method signature="RegistrationPositveTestCase()[pri:4, instance:automate.quickstart.Registration@20deea7f]" started-at="2023-04-20T16:42:00 IST" name="RegistrationPositveTestCase" finished-at="2023-04-20T16:42:01 IST" duration-ms="246" status="FAIL">
-          <exception class="java.lang.NullPointerException">
-            <message>
-              <![CDATA[Cannot invoke "io.appium.java_client.android.AndroidDriver.findElement(org.openqa.selenium.By)" because "this.driver" is null]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException: Cannot invoke "io.appium.java_client.android.AndroidDriver.findElement(org.openqa.selenium.By)" because "this.driver" is null
-at automate.quickstart.Registration.RegistrationPositveTestCase(Registration.java:204)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:794)
-at org.testng.TestRunner.run(TestRunner.java:596)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-at org.testng.TestNG.runSuites(TestNG.java:1063)
-at org.testng.TestNG.run(TestNG.java:1031)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- RegistrationPositveTestCase -->
-        <test-method signature="registrationTellUsNegativeTestCase()[pri:5, instance:automate.quickstart.Registration@20deea7f]" started-at="2023-04-20T16:42:01 IST" name="registrationTellUsNegativeTestCase" finished-at="2023-04-20T16:42:06 IST" duration-ms="5010" status="FAIL">
-          <exception class="java.lang.NullPointerException">
-            <message>
-              <![CDATA[Cannot invoke "io.appium.java_client.android.AndroidDriver.findElement(org.openqa.selenium.By)" because "this.driver" is null]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException: Cannot invoke "io.appium.java_client.android.AndroidDriver.findElement(org.openqa.selenium.By)" because "this.driver" is null
-at automate.quickstart.Registration.registrationTellUsNegativeTestCase(Registration.java:397)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:794)
-at org.testng.TestRunner.run(TestRunner.java:596)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-at org.testng.TestNG.runSuites(TestNG.java:1063)
-at org.testng.TestNG.run(TestNG.java:1031)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- registrationTellUsNegativeTestCase -->
-        <test-method signature="ReferralNegative()[pri:6, instance:automate.quickstart.Registration@20deea7f]" started-at="2023-04-20T16:42:06 IST" name="ReferralNegative" finished-at="2023-04-20T16:42:06 IST" duration-ms="2" status="FAIL">
-          <exception class="java.lang.NullPointerException">
-            <message>
-              <![CDATA[Cannot invoke "io.appium.java_client.android.AndroidDriver.findElement(org.openqa.selenium.By)" because "this.driver" is null]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException: Cannot invoke "io.appium.java_client.android.AndroidDriver.findElement(org.openqa.selenium.By)" because "this.driver" is null
-at automate.quickstart.Registration.ReferralNegative(Registration.java:504)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:794)
-at org.testng.TestRunner.run(TestRunner.java:596)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-at org.testng.TestNG.runSuites(TestNG.java:1063)
-at org.testng.TestNG.run(TestNG.java:1031)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- ReferralNegative -->
-        <test-method signature="Referralpositivecase()[pri:7, instance:automate.quickstart.Registration@20deea7f]" started-at="2023-04-20T16:42:06 IST" name="Referralpositivecase" finished-at="2023-04-20T16:42:06 IST" duration-ms="2" status="FAIL">
-          <exception class="java.lang.NullPointerException">
-            <message>
-              <![CDATA[Cannot invoke "io.appium.java_client.android.AndroidDriver.findElement(org.openqa.selenium.By)" because "this.driver" is null]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException: Cannot invoke "io.appium.java_client.android.AndroidDriver.findElement(org.openqa.selenium.By)" because "this.driver" is null
-at automate.quickstart.Registration.Referralpositivecase(Registration.java:549)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:794)
-at org.testng.TestRunner.run(TestRunner.java:596)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-at org.testng.TestNG.runSuites(TestNG.java:1063)
-at org.testng.TestNG.run(TestNG.java:1031)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Referralpositivecase -->
-        <test-method signature="RegistrationProfileName_NegativeTestCase()[pri:8, instance:automate.quickstart.Registration@20deea7f]" started-at="2023-04-20T16:42:06 IST" name="RegistrationProfileName_NegativeTestCase" finished-at="2023-04-20T16:42:11 IST" duration-ms="5017" status="FAIL">
-          <exception class="java.lang.NullPointerException">
-            <message>
-              <![CDATA[Cannot invoke "io.appium.java_client.android.AndroidDriver.findElement(org.openqa.selenium.By)" because "this.driver" is null]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException: Cannot invoke "io.appium.java_client.android.AndroidDriver.findElement(org.openqa.selenium.By)" because "this.driver" is null
-at automate.quickstart.Registration.RegistrationProfileName_NegativeTestCase(Registration.java:588)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:794)
-at org.testng.TestRunner.run(TestRunner.java:596)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-at org.testng.TestNG.runSuites(TestNG.java:1063)
-at org.testng.TestNG.run(TestNG.java:1031)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- RegistrationProfileName_NegativeTestCase -->
+        </test-method> <!-- registrationLessThanTen -->
       </class> <!-- automate.quickstart.Registration -->
     </test> <!-- Test -->
   </suite> <!-- Suite -->

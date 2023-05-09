@@ -18,7 +18,6 @@ import io.appium.java_client.android.AndroidElement;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import java.net.URL;
 
-
 import java.util.ArrayList;
 import java.util.List;
 import java.util.NoSuchElementException;
@@ -62,9 +61,39 @@ import io.appium.java_client.touch.offset.ElementOption;
 import io.appium.java_client.touch.offset.PointOption;
 
 public class Registration extends AppiumEXtendedMethods{
+	public void setup() throws MalformedURLException {
+		 
+			DesiredCapabilities caps = new DesiredCapabilities();
+			// caps.setCapability("deviceName", "Sheetal");
+			caps.setCapability("deviceName", "realme RMX3081");
+			caps.setCapability("platformName", "Android");
+			caps.setCapability("appPackage", "com.stocky_dodo.app");
+			caps.setCapability("appActivity", "com.stocky_dodo.app.MainActivity");
+			caps.setCapability("appium:automationName", "UiAutomator2");
+			caps.setCapability("noReset", true);
+			caps.setCapability("appium:appWaitForLaunch", false);
+			caps.setCapability("adbExecTimeout", 60000);
 
+			URL url = new URL("http://127.0.0.1:4723/wd/hub");
+
+			driver = new AndroidDriver<MobileElement>(url, caps);
+			driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+					
+			
+		}
+	@Test 
+	public void splashScreen()
+	{
+		
+	}
+	a
+@Test
+public void sendOTPisDisable()
+{
 	
-	//@Test(priority = 1)
+}
+	
+//@Test(priority = 1)
 
 	public void registrationLessThanTen() throws IOException, CsvException {
 		setup();
@@ -92,6 +121,8 @@ public class Registration extends AppiumEXtendedMethods{
 		// ait.until(ExpectedConditions.invisibilityOf(driver.findElement(MobileBy.AccessibilityId("Login
 		// / Register"))));
 		// MobileElement out= driver.findElement(MobileBy.AccessibilityId("Login /
+		
+		
 		// Register"));
 		driver.navigate().back();
 		
@@ -120,7 +151,7 @@ public class Registration extends AppiumEXtendedMethods{
 
 	}
 
-	@Test(priority = 2)
+	//@Test(priority = 2)
 	public void registrationNegativeTestCaseZeroInput() throws IOException, CsvException, InterruptedException {
 		CSVReader reader = new CSVReader(new FileReader("C:\\Users\\AdityaRaj\\Downloads\\automation_data.csv"));
 
@@ -183,7 +214,7 @@ public class Registration extends AppiumEXtendedMethods{
 		Assert.assertEquals(getText2, expectedInput, "Number input is not truncated correctly");
 	}
 
-	@Test(priority = 4)
+	//@Test(priority = 4)
 
 	public void RegistrationPositveTestCase() throws IOException, CsvException, InterruptedException,	NoSuchElementException
 
@@ -329,7 +360,7 @@ public class Registration extends AppiumEXtendedMethods{
 	}
 	//[r=210,g=255,b=64]  bright shade of green with a yellowish tint.
 
-	@Test(priority = 3)
+	//@Test(priority = 3)
 
 	public void RegistrationTermandConditionNegativeTestCase() throws IOException, CsvException, InterruptedException
 
@@ -386,7 +417,7 @@ public class Registration extends AppiumEXtendedMethods{
 
 	}
 
-	@Test(priority = 5)
+	//@Test(priority = 5)
 	public void registrationTellUsNegativeTestCase() throws InterruptedException, IOException, CsvException { // Find
 																												// all
 																												// elements
@@ -499,7 +530,7 @@ public class Registration extends AppiumEXtendedMethods{
 
 	}
 
-	@Test(priority = 6)
+	//@Test(priority = 6)
 	public void ReferralNegative() {
 		MobileElement referral = driver.findElement(MobileBy.xpath("/hierarchy/android.widget.FrameLayout"
 				+ "/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/"
@@ -544,7 +575,7 @@ public class Registration extends AppiumEXtendedMethods{
 		}
 	}
 
-	@Test(priority = 7)
+	//@Test(priority = 7)
 	public void Referralpositivecase() {
 		MobileElement referral = driver.findElement(MobileBy.xpath("/hierarchy/android.widget.FrameLayout"
 				+ "/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/"
@@ -576,7 +607,7 @@ public class Registration extends AppiumEXtendedMethods{
 
 	}
 
-	@Test(priority = 8)
+	//@Test(priority = 8)
 	public void RegistrationProfileName_NegativeTestCase() throws InterruptedException, IOException, CsvException {
 		CSVReader reader = new CSVReader(new FileReader("C:\\Users\\AdityaRaj\\Downloads\\automation_data.csv"));
 
@@ -866,7 +897,7 @@ Thread.sleep(5000);
 
 	}
 
-//@Test
+////@Test
 	public void LogIn() throws MalformedURLException {
 		DesiredCapabilities caps = new DesiredCapabilities();
 		// caps.setCapability("deviceName", "Sheetal");
@@ -908,7 +939,14 @@ Thread.sleep(5000);
 		// verify.click();
 
 	}
-
+	public void RegistrationPushDeeplinking()
+	{
+		
+	}
+	public void RegistrationInAppDeeplinking()
+	{
+		
+	}
 
 
 	public void tearDown() {

@@ -5,15 +5,25 @@
     <classes>
       <class name="automate.quickstart.Registration">
         <methods>
-          <include name="registrationTellUsNegativeTestCase"/>
-          <include name="RegistrationTermandConditionNegativeTestCase"/>
-          <include name="Referralpositivecase"/>
-          <include name="RegistrationProfileName_NegativeTestCase"/>
-          <include name="RegistrationPositveTestCase"/>
-          <include name="registrationNegativeTestCaseZeroInput"/>
-          <include name="ReferralNegative"/>
+          <include name="registrationLessThanTen"/>
         </methods>
       </class> <!-- automate.quickstart.Registration -->
+      <class name="automate.quickstart.EditProfile">
+        <methods>
+          <include name="editProfile"/>
+          <include name="MobileNumberNotEditable"/>
+          <include name="ProfileNamelessThanthree"/>
+          <include name="Account_settings_Edit_Profile"/>
+          <include name="ProfileDeepLinkingInApp"/>
+          <include name="ProfileNameEmpty"/>
+          <include name="DOB_negativeOutofrange1"/>
+          <include name="ProfileDeepLinking"/>
+          <include name="DOB_negativeOutOfRange2"/>
+          <include name="Gender"/>
+          <include name="setup"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- automate.quickstart.EditProfile -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

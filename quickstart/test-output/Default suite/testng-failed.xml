@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="automate.quickstart.EditProfile">
+      <class name="automate.quickstart.Registration">
         <methods>
-          <include name="editProfile"/>
+          <include name="registrationLessThanTen"/>
         </methods>
-      </class> <!-- automate.quickstart.EditProfile -->
+      </class> <!-- automate.quickstart.Registration -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
