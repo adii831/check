@@ -5,7 +5,6 @@
     <classes>
       <class name="automate.quickstart.EditProfile">
         <methods>
-          <include name="MobileNumberNotEditable"/>
           <include name="ProfileNamelessThanthree"/>
           <include name="ProfileDeepLinkingInApp"/>
           <include name="ProfileDeepLinking"/>

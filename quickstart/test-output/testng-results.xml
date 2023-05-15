@@ -1,65 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="13" passed="9" failed="4" skipped="0">
+<testng-results ignored="0" total="13" passed="10" failed="3" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-05-15T06:28:39 IST" name="Default suite" finished-at="2023-05-15T06:35:57 IST" duration-ms="438396">
+  <suite started-at="2023-05-15T06:47:24 IST" name="Default suite" finished-at="2023-05-15T06:55:12 IST" duration-ms="468164">
     <groups>
     </groups>
-    <test started-at="2023-05-15T06:28:39 IST" name="Default test" finished-at="2023-05-15T06:35:57 IST" duration-ms="438396">
+    <test started-at="2023-05-15T06:47:24 IST" name="Default test" finished-at="2023-05-15T06:55:12 IST" duration-ms="468164">
       <class name="automate.quickstart.EditProfile">
-        <test-method is-config="true" signature="setup()[pri:0, instance:automate.quickstart.EditProfile@6c80d78a]" started-at="2023-05-15T06:28:39 IST" name="setup" finished-at="2023-05-15T06:28:50 IST" duration-ms="10943" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:automate.quickstart.EditProfile@6c80d78a]" started-at="2023-05-15T06:47:24 IST" name="setup" finished-at="2023-05-15T06:47:35 IST" duration-ms="11271" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="checkElements()[pri:1, instance:automate.quickstart.EditProfile@6c80d78a]" started-at="2023-05-15T06:28:50 IST" name="checkElements" finished-at="2023-05-15T06:30:10 IST" duration-ms="80313" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- checkElements -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:automate.quickstart.EditProfile@6c80d78a]" started-at="2023-05-15T06:30:10 IST" name="tearDown" finished-at="2023-05-15T06:30:11 IST" duration-ms="693" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:automate.quickstart.EditProfile@6c80d78a]" started-at="2023-05-15T06:30:11 IST" name="setup" finished-at="2023-05-15T06:30:21 IST" duration-ms="9760" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="hamburger_profile()[pri:2, instance:automate.quickstart.EditProfile@6c80d78a]" started-at="2023-05-15T06:30:21 IST" name="hamburger_profile" finished-at="2023-05-15T06:30:29 IST" duration-ms="8626" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- hamburger_profile -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:automate.quickstart.EditProfile@6c80d78a]" started-at="2023-05-15T06:30:29 IST" name="tearDown" finished-at="2023-05-15T06:30:30 IST" duration-ms="537" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:automate.quickstart.EditProfile@6c80d78a]" started-at="2023-05-15T06:30:30 IST" name="setup" finished-at="2023-05-15T06:30:39 IST" duration-ms="9484" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="ProfileNameAlreadyTaken()[pri:3, instance:automate.quickstart.EditProfile@6c80d78a]" started-at="2023-05-15T06:30:39 IST" name="ProfileNameAlreadyTaken" finished-at="2023-05-15T06:30:53 IST" duration-ms="13138" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- ProfileNameAlreadyTaken -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:automate.quickstart.EditProfile@6c80d78a]" started-at="2023-05-15T06:30:53 IST" name="tearDown" finished-at="2023-05-15T06:30:53 IST" duration-ms="659" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:automate.quickstart.EditProfile@6c80d78a]" started-at="2023-05-15T06:30:53 IST" name="setup" finished-at="2023-05-15T06:31:03 IST" duration-ms="9453" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="ProfileNameEmpty()[pri:4, instance:automate.quickstart.EditProfile@6c80d78a]" started-at="2023-05-15T06:31:03 IST" name="ProfileNameEmpty" finished-at="2023-05-15T06:31:23 IST" duration-ms="20616" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- ProfileNameEmpty -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:automate.quickstart.EditProfile@6c80d78a]" started-at="2023-05-15T06:31:23 IST" name="tearDown" finished-at="2023-05-15T06:31:24 IST" duration-ms="559" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:automate.quickstart.EditProfile@6c80d78a]" started-at="2023-05-15T06:31:24 IST" name="setup" finished-at="2023-05-15T06:31:34 IST" duration-ms="9628" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="ProfileNamelessThanthree()[pri:5, instance:automate.quickstart.EditProfile@6c80d78a]" started-at="2023-05-15T06:31:34 IST" name="ProfileNamelessThanthree" finished-at="2023-05-15T06:31:54 IST" duration-ms="20173" status="FAIL">
+        <test-method signature="ProfileNamelessThanthree()[pri:1, instance:automate.quickstart.EditProfile@6c80d78a]" started-at="2023-05-15T06:47:35 IST" name="ProfileNamelessThanthree" finished-at="2023-05-15T06:48:02 IST" duration-ms="26372" status="FAIL">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[expected [Profile name should be atleast 3 characters long] but found []]]>
@@ -72,7 +24,7 @@ at org.testng.Assert.assertEqualsImpl(Assert.java:140)
 at org.testng.Assert.assertEquals(Assert.java:122)
 at org.testng.Assert.assertEquals(Assert.java:629)
 at org.testng.Assert.assertEquals(Assert.java:639)
-at automate.quickstart.EditProfile.ProfileNamelessThanthree(EditProfile.java:150)
+at automate.quickstart.EditProfile.ProfileNamelessThanthree(EditProfile.java:151)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -107,63 +59,111 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ProfileNamelessThanthree -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:automate.quickstart.EditProfile@6c80d78a]" started-at="2023-05-15T06:31:54 IST" name="tearDown" finished-at="2023-05-15T06:31:54 IST" duration-ms="591" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:automate.quickstart.EditProfile@6c80d78a]" started-at="2023-05-15T06:48:02 IST" name="tearDown" finished-at="2023-05-15T06:48:02 IST" duration-ms="565" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:automate.quickstart.EditProfile@6c80d78a]" started-at="2023-05-15T06:31:54 IST" name="setup" finished-at="2023-05-15T06:32:04 IST" duration-ms="9548" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:automate.quickstart.EditProfile@6c80d78a]" started-at="2023-05-15T06:48:02 IST" name="setup" finished-at="2023-05-15T06:48:12 IST" duration-ms="9683" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="DOB_negativeOutofrange1()[pri:6, instance:automate.quickstart.EditProfile@6c80d78a]" started-at="2023-05-15T06:32:04 IST" name="DOB_negativeOutofrange1" finished-at="2023-05-15T06:32:27 IST" duration-ms="23577" status="PASS">
+        <test-method signature="checkElements()[pri:1, instance:automate.quickstart.EditProfile@6c80d78a]" started-at="2023-05-15T06:48:12 IST" name="checkElements" finished-at="2023-05-15T06:49:29 IST" duration-ms="77338" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkElements -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:automate.quickstart.EditProfile@6c80d78a]" started-at="2023-05-15T06:49:29 IST" name="tearDown" finished-at="2023-05-15T06:49:30 IST" duration-ms="646" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:automate.quickstart.EditProfile@6c80d78a]" started-at="2023-05-15T06:49:30 IST" name="setup" finished-at="2023-05-15T06:49:39 IST" duration-ms="9485" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="hamburger_profile()[pri:2, instance:automate.quickstart.EditProfile@6c80d78a]" started-at="2023-05-15T06:49:39 IST" name="hamburger_profile" finished-at="2023-05-15T06:49:48 IST" duration-ms="8069" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- hamburger_profile -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:automate.quickstart.EditProfile@6c80d78a]" started-at="2023-05-15T06:49:48 IST" name="tearDown" finished-at="2023-05-15T06:49:48 IST" duration-ms="645" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:automate.quickstart.EditProfile@6c80d78a]" started-at="2023-05-15T06:49:48 IST" name="setup" finished-at="2023-05-15T06:49:59 IST" duration-ms="10443" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="ProfileNameAlreadyTaken()[pri:3, instance:automate.quickstart.EditProfile@6c80d78a]" started-at="2023-05-15T06:49:59 IST" name="ProfileNameAlreadyTaken" finished-at="2023-05-15T06:50:11 IST" duration-ms="12666" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ProfileNameAlreadyTaken -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:automate.quickstart.EditProfile@6c80d78a]" started-at="2023-05-15T06:50:11 IST" name="tearDown" finished-at="2023-05-15T06:50:12 IST" duration-ms="532" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:automate.quickstart.EditProfile@6c80d78a]" started-at="2023-05-15T06:50:12 IST" name="setup" finished-at="2023-05-15T06:50:21 IST" duration-ms="9496" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="ProfileNameEmpty()[pri:4, instance:automate.quickstart.EditProfile@6c80d78a]" started-at="2023-05-15T06:50:21 IST" name="ProfileNameEmpty" finished-at="2023-05-15T06:50:43 IST" duration-ms="21841" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ProfileNameEmpty -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:automate.quickstart.EditProfile@6c80d78a]" started-at="2023-05-15T06:50:43 IST" name="tearDown" finished-at="2023-05-15T06:50:44 IST" duration-ms="688" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:automate.quickstart.EditProfile@6c80d78a]" started-at="2023-05-15T06:50:44 IST" name="setup" finished-at="2023-05-15T06:50:55 IST" duration-ms="10707" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="DOB_negativeOutofrange1()[pri:6, instance:automate.quickstart.EditProfile@6c80d78a]" started-at="2023-05-15T06:50:55 IST" name="DOB_negativeOutofrange1" finished-at="2023-05-15T06:51:18 IST" duration-ms="23391" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- DOB_negativeOutofrange1 -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:automate.quickstart.EditProfile@6c80d78a]" started-at="2023-05-15T06:32:27 IST" name="tearDown" finished-at="2023-05-15T06:32:28 IST" duration-ms="509" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:automate.quickstart.EditProfile@6c80d78a]" started-at="2023-05-15T06:51:18 IST" name="tearDown" finished-at="2023-05-15T06:51:18 IST" duration-ms="511" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:automate.quickstart.EditProfile@6c80d78a]" started-at="2023-05-15T06:32:28 IST" name="setup" finished-at="2023-05-15T06:32:38 IST" duration-ms="9804" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:automate.quickstart.EditProfile@6c80d78a]" started-at="2023-05-15T06:51:18 IST" name="setup" finished-at="2023-05-15T06:51:28 IST" duration-ms="9745" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="DOB_negativeOutOfRange2()[pri:7, instance:automate.quickstart.EditProfile@6c80d78a]" started-at="2023-05-15T06:32:38 IST" name="DOB_negativeOutOfRange2" finished-at="2023-05-15T06:32:55 IST" duration-ms="17723" status="PASS">
+        <test-method signature="DOB_negativeOutOfRange2()[pri:7, instance:automate.quickstart.EditProfile@6c80d78a]" started-at="2023-05-15T06:51:28 IST" name="DOB_negativeOutOfRange2" finished-at="2023-05-15T06:51:46 IST" duration-ms="17748" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- DOB_negativeOutOfRange2 -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:automate.quickstart.EditProfile@6c80d78a]" started-at="2023-05-15T06:32:55 IST" name="tearDown" finished-at="2023-05-15T06:32:56 IST" duration-ms="660" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:automate.quickstart.EditProfile@6c80d78a]" started-at="2023-05-15T06:51:46 IST" name="tearDown" finished-at="2023-05-15T06:51:47 IST" duration-ms="642" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:automate.quickstart.EditProfile@6c80d78a]" started-at="2023-05-15T06:32:56 IST" name="setup" finished-at="2023-05-15T06:33:06 IST" duration-ms="9552" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:automate.quickstart.EditProfile@6c80d78a]" started-at="2023-05-15T06:51:47 IST" name="setup" finished-at="2023-05-15T06:51:56 IST" duration-ms="9573" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="Gender()[pri:8, instance:automate.quickstart.EditProfile@6c80d78a]" started-at="2023-05-15T06:33:06 IST" name="Gender" finished-at="2023-05-15T06:33:43 IST" duration-ms="37354" status="PASS">
+        <test-method signature="Gender()[pri:8, instance:automate.quickstart.EditProfile@6c80d78a]" started-at="2023-05-15T06:51:56 IST" name="Gender" finished-at="2023-05-15T06:52:33 IST" duration-ms="37252" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Gender -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:automate.quickstart.EditProfile@6c80d78a]" started-at="2023-05-15T06:33:43 IST" name="tearDown" finished-at="2023-05-15T06:33:44 IST" duration-ms="692" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:automate.quickstart.EditProfile@6c80d78a]" started-at="2023-05-15T06:52:33 IST" name="tearDown" finished-at="2023-05-15T06:52:34 IST" duration-ms="562" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:automate.quickstart.EditProfile@6c80d78a]" started-at="2023-05-15T06:33:44 IST" name="setup" finished-at="2023-05-15T06:33:53 IST" duration-ms="9704" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:automate.quickstart.EditProfile@6c80d78a]" started-at="2023-05-15T06:52:34 IST" name="setup" finished-at="2023-05-15T06:52:44 IST" duration-ms="9589" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="Account_settings_Edit_Profile()[pri:9, instance:automate.quickstart.EditProfile@6c80d78a]" started-at="2023-05-15T06:33:53 IST" name="Account_settings_Edit_Profile" finished-at="2023-05-15T06:34:15 IST" duration-ms="21872" status="PASS">
+        <test-method signature="Account_settings_Edit_Profile()[pri:9, instance:automate.quickstart.EditProfile@6c80d78a]" started-at="2023-05-15T06:52:44 IST" name="Account_settings_Edit_Profile" finished-at="2023-05-15T06:53:06 IST" duration-ms="22655" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Account_settings_Edit_Profile -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:automate.quickstart.EditProfile@6c80d78a]" started-at="2023-05-15T06:34:15 IST" name="tearDown" finished-at="2023-05-15T06:34:15 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:automate.quickstart.EditProfile@6c80d78a]" started-at="2023-05-15T06:53:06 IST" name="tearDown" finished-at="2023-05-15T06:53:07 IST" duration-ms="727" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:automate.quickstart.EditProfile@6c80d78a]" started-at="2023-05-15T06:34:15 IST" name="setup" finished-at="2023-05-15T06:34:15 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:automate.quickstart.EditProfile@6c80d78a]" started-at="2023-05-15T06:53:07 IST" name="setup" finished-at="2023-05-15T06:53:17 IST" duration-ms="9550" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="ProfileDeepLinking()[pri:10, instance:automate.quickstart.EditProfile@6c80d78a]" started-at="2023-05-15T06:34:15 IST" name="ProfileDeepLinking" finished-at="2023-05-15T06:34:37 IST" duration-ms="21387" status="FAIL">
+        <test-method signature="ProfileDeepLinkingInApp()[pri:10, instance:automate.quickstart.EditProfile@6c80d78a]" started-at="2023-05-15T06:53:17 IST" name="ProfileDeepLinkingInApp" finished-at="2023-05-15T06:53:46 IST" duration-ms="29751" status="FAIL">
           <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
               <![CDATA[An element could not be located on the page using the given search parameters.
@@ -172,7 +172,7 @@ Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17
 System info: host: 'LAPTOP-T69AHU1A', ip: '192.168.20.217', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'
 Driver info: io.appium.java_client.android.AndroidDriver
 Capabilities {adbExecTimeout: 60000, appActivity: com.stocky_dodo.app.MainAct..., appPackage: com.stocky_dodo.app, appWaitForLaunch: false, automationName: UiAutomator2, databaseEnabled: false, desired: {adbExecTimeout: 60000, appActivity: com.stocky_dodo.app.MainAct..., appPackage: com.stocky_dodo.app, appWaitForLaunch: false, automationName: UiAutomator2, deviceName: realme RMX3081, noReset: true, platformName: android}, deviceApiLevel: 31, deviceManufacturer: realme, deviceModel: RMX3081, deviceName: 21b7da02, deviceScreenDensity: 480, deviceScreenSize: 1080x2400, deviceUDID: 21b7da02, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, noReset: true, pixelRatio: 3, platform: LINUX, platformName: Android, platformVersion: 12, statBarHeight: 108, takesScreenshot: true, viewportRect: {height: 2050, left: 0, top: 108, width: 1080}, warnings: {}, webStorageEnabled: false}
-Session ID: 69d82ae6-7084-4373-9330-b3debe0b6045
+Session ID: f73a44da-d3c3-4f8c-a8b0-3c0eddb4e4d8
 *** Element info: {Using=accessibility id, value= Edit}]]>
             </message>
             <full-stacktrace>
@@ -182,7 +182,7 @@ Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17
 System info: host: 'LAPTOP-T69AHU1A', ip: '192.168.20.217', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'
 Driver info: io.appium.java_client.android.AndroidDriver
 Capabilities {adbExecTimeout: 60000, appActivity: com.stocky_dodo.app.MainAct..., appPackage: com.stocky_dodo.app, appWaitForLaunch: false, automationName: UiAutomator2, databaseEnabled: false, desired: {adbExecTimeout: 60000, appActivity: com.stocky_dodo.app.MainAct..., appPackage: com.stocky_dodo.app, appWaitForLaunch: false, automationName: UiAutomator2, deviceName: realme RMX3081, noReset: true, platformName: android}, deviceApiLevel: 31, deviceManufacturer: realme, deviceModel: RMX3081, deviceName: 21b7da02, deviceScreenDensity: 480, deviceScreenSize: 1080x2400, deviceUDID: 21b7da02, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, noReset: true, pixelRatio: 3, platform: LINUX, platformName: Android, platformVersion: 12, statBarHeight: 108, takesScreenshot: true, viewportRect: {height: 2050, left: 0, top: 108, width: 1080}, warnings: {}, webStorageEnabled: false}
-Session ID: 69d82ae6-7084-4373-9330-b3debe0b6045
+Session ID: f73a44da-d3c3-4f8c-a8b0-3c0eddb4e4d8
 *** Element info: {Using=accessibility id, value= Edit}
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
@@ -208,201 +208,7 @@ at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:3
 at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:57)
 at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
 at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
-at automate.quickstart.EditProfile.ProfileDeepLinking(EditProfile.java:472)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:794)
-at org.testng.TestRunner.run(TestRunner.java:596)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-at org.testng.TestNG.runSuites(TestNG.java:1063)
-at org.testng.TestNG.run(TestNG.java:1031)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- ProfileDeepLinking -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:automate.quickstart.EditProfile@6c80d78a]" started-at="2023-05-15T06:34:37 IST" name="tearDown" finished-at="2023-05-15T06:34:37 IST" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method signature="MobileNumberNotEditable()[pri:11, instance:automate.quickstart.EditProfile@6c80d78a]" started-at="2023-05-15T06:34:37 IST" name="MobileNumberNotEditable" finished-at="2023-05-15T06:35:10 IST" duration-ms="32984" status="FAIL">
-          <exception class="org.openqa.selenium.NoSuchElementException">
-            <message>
-              <![CDATA[An element could not be located on the page using the given search parameters.
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'LAPTOP-T69AHU1A', ip: '192.168.20.217', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'
-Driver info: io.appium.java_client.android.AndroidDriver
-Capabilities {adbExecTimeout: 60000, appActivity: com.stocky_dodo.app.MainAct..., appPackage: com.stocky_dodo.app, appWaitForLaunch: false, automationName: UiAutomator2, databaseEnabled: false, desired: {adbExecTimeout: 60000, appActivity: com.stocky_dodo.app.MainAct..., appPackage: com.stocky_dodo.app, appWaitForLaunch: false, automationName: UiAutomator2, deviceName: realme RMX3081, noReset: true, platformName: android}, deviceApiLevel: 31, deviceManufacturer: realme, deviceModel: RMX3081, deviceName: 21b7da02, deviceScreenDensity: 480, deviceScreenSize: 1080x2400, deviceUDID: 21b7da02, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, noReset: true, pixelRatio: 3, platform: LINUX, platformName: Android, platformVersion: 12, statBarHeight: 108, takesScreenshot: true, viewportRect: {height: 2050, left: 0, top: 108, width: 1080}, warnings: {}, webStorageEnabled: false}
-Session ID: 69d82ae6-7084-4373-9330-b3debe0b6045
-*** Element info: {Using=xpath, value=/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.View/android.view.View/android.view.View/android.view.View/android.view.View[2]/android.widget.ScrollView/android.view.View[8]}]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'LAPTOP-T69AHU1A', ip: '192.168.20.217', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'
-Driver info: io.appium.java_client.android.AndroidDriver
-Capabilities {adbExecTimeout: 60000, appActivity: com.stocky_dodo.app.MainAct..., appPackage: com.stocky_dodo.app, appWaitForLaunch: false, automationName: UiAutomator2, databaseEnabled: false, desired: {adbExecTimeout: 60000, appActivity: com.stocky_dodo.app.MainAct..., appPackage: com.stocky_dodo.app, appWaitForLaunch: false, automationName: UiAutomator2, deviceName: realme RMX3081, noReset: true, platformName: android}, deviceApiLevel: 31, deviceManufacturer: realme, deviceModel: RMX3081, deviceName: 21b7da02, deviceScreenDensity: 480, deviceScreenSize: 1080x2400, deviceUDID: 21b7da02, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, noReset: true, pixelRatio: 3, platform: LINUX, platformName: Android, platformVersion: 12, statBarHeight: 108, takesScreenshot: true, viewportRect: {height: 2050, left: 0, top: 108, width: 1080}, warnings: {}, webStorageEnabled: false}
-Session ID: 69d82ae6-7084-4373-9330-b3debe0b6045
-*** Element info: {Using=xpath, value=/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.View/android.view.View/android.view.View/android.view.View/android.view.View[2]/android.widget.ScrollView/android.view.View[8]}
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:250)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:41)
-at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
-at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:61)
-at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
-at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
-at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
-at io.appium.java_client.DefaultGenericMobileDriver.findElementByXPath(DefaultGenericMobileDriver.java:151)
-at io.appium.java_client.AppiumDriver.findElementByXPath(AppiumDriver.java:1)
-at io.appium.java_client.android.AndroidDriver.findElementByXPath(AndroidDriver.java:1)
-at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:57)
-at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
-at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
-at automate.quickstart.EditProfile.MobileNumberNotEditable(EditProfile.java:507)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:794)
-at org.testng.TestRunner.run(TestRunner.java:596)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-at org.testng.TestNG.runSuites(TestNG.java:1063)
-at org.testng.TestNG.run(TestNG.java:1031)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- MobileNumberNotEditable -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:automate.quickstart.EditProfile@6c80d78a]" started-at="2023-05-15T06:34:37 IST" name="setup" finished-at="2023-05-15T06:34:37 IST" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:automate.quickstart.EditProfile@6c80d78a]" started-at="2023-05-15T06:35:10 IST" name="tearDown" finished-at="2023-05-15T06:35:10 IST" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method signature="editProfile()[pri:12, instance:automate.quickstart.EditProfile@6c80d78a]" started-at="2023-05-15T06:35:10 IST" name="editProfile" finished-at="2023-05-15T06:35:47 IST" duration-ms="37664" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- editProfile -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:automate.quickstart.EditProfile@6c80d78a]" started-at="2023-05-15T06:35:10 IST" name="setup" finished-at="2023-05-15T06:35:10 IST" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:automate.quickstart.EditProfile@6c80d78a]" started-at="2023-05-15T06:35:47 IST" name="tearDown" finished-at="2023-05-15T06:35:47 IST" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:automate.quickstart.EditProfile@6c80d78a]" started-at="2023-05-15T06:35:47 IST" name="setup" finished-at="2023-05-15T06:35:47 IST" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="ProfileDeepLinkingInApp()[pri:13, instance:automate.quickstart.EditProfile@6c80d78a]" started-at="2023-05-15T06:35:47 IST" name="ProfileDeepLinkingInApp" finished-at="2023-05-15T06:35:57 IST" duration-ms="10139" status="FAIL">
-          <exception class="org.openqa.selenium.NoSuchElementException">
-            <message>
-              <![CDATA[An element could not be located on the page using the given search parameters.
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'LAPTOP-T69AHU1A', ip: '192.168.20.217', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'
-Driver info: io.appium.java_client.android.AndroidDriver
-Capabilities {adbExecTimeout: 60000, appActivity: com.stocky_dodo.app.MainAct..., appPackage: com.stocky_dodo.app, appWaitForLaunch: false, automationName: UiAutomator2, databaseEnabled: false, desired: {adbExecTimeout: 60000, appActivity: com.stocky_dodo.app.MainAct..., appPackage: com.stocky_dodo.app, appWaitForLaunch: false, automationName: UiAutomator2, deviceName: realme RMX3081, noReset: true, platformName: android}, deviceApiLevel: 31, deviceManufacturer: realme, deviceModel: RMX3081, deviceName: 21b7da02, deviceScreenDensity: 480, deviceScreenSize: 1080x2400, deviceUDID: 21b7da02, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, noReset: true, pixelRatio: 3, platform: LINUX, platformName: Android, platformVersion: 12, statBarHeight: 108, takesScreenshot: true, viewportRect: {height: 2050, left: 0, top: 108, width: 1080}, warnings: {}, webStorageEnabled: false}
-Session ID: 69d82ae6-7084-4373-9330-b3debe0b6045
-*** Element info: {Using=xpath, value=/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.View/android.view.View/android.view.View/android.view.View/android.view.View[1]/android.widget.ImageView[4]}]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'LAPTOP-T69AHU1A', ip: '192.168.20.217', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'
-Driver info: io.appium.java_client.android.AndroidDriver
-Capabilities {adbExecTimeout: 60000, appActivity: com.stocky_dodo.app.MainAct..., appPackage: com.stocky_dodo.app, appWaitForLaunch: false, automationName: UiAutomator2, databaseEnabled: false, desired: {adbExecTimeout: 60000, appActivity: com.stocky_dodo.app.MainAct..., appPackage: com.stocky_dodo.app, appWaitForLaunch: false, automationName: UiAutomator2, deviceName: realme RMX3081, noReset: true, platformName: android}, deviceApiLevel: 31, deviceManufacturer: realme, deviceModel: RMX3081, deviceName: 21b7da02, deviceScreenDensity: 480, deviceScreenSize: 1080x2400, deviceUDID: 21b7da02, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, noReset: true, pixelRatio: 3, platform: LINUX, platformName: Android, platformVersion: 12, statBarHeight: 108, takesScreenshot: true, viewportRect: {height: 2050, left: 0, top: 108, width: 1080}, warnings: {}, webStorageEnabled: false}
-Session ID: 69d82ae6-7084-4373-9330-b3debe0b6045
-*** Element info: {Using=xpath, value=/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.View/android.view.View/android.view.View/android.view.View/android.view.View[1]/android.widget.ImageView[4]}
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:250)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:41)
-at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
-at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:61)
-at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
-at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
-at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
-at io.appium.java_client.DefaultGenericMobileDriver.findElementByXPath(DefaultGenericMobileDriver.java:151)
-at io.appium.java_client.AppiumDriver.findElementByXPath(AppiumDriver.java:1)
-at io.appium.java_client.android.AndroidDriver.findElementByXPath(AndroidDriver.java:1)
-at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:57)
-at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
-at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
-at automate.quickstart.EditProfile.ProfileDeepLinkingInApp(EditProfile.java:479)
+at automate.quickstart.EditProfile.ProfileDeepLinkingInApp(EditProfile.java:491)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -437,7 +243,119 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ProfileDeepLinkingInApp -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:automate.quickstart.EditProfile@6c80d78a]" started-at="2023-05-15T06:35:57 IST" name="tearDown" finished-at="2023-05-15T06:35:57 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:automate.quickstart.EditProfile@6c80d78a]" started-at="2023-05-15T06:53:46 IST" name="tearDown" finished-at="2023-05-15T06:53:47 IST" duration-ms="695" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:automate.quickstart.EditProfile@6c80d78a]" started-at="2023-05-15T06:53:47 IST" name="setup" finished-at="2023-05-15T06:53:57 IST" duration-ms="9859" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="MobileNumberNotEditable()[pri:11, instance:automate.quickstart.EditProfile@6c80d78a]" started-at="2023-05-15T06:53:57 IST" name="MobileNumberNotEditable" finished-at="2023-05-15T06:54:09 IST" duration-ms="12444" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- MobileNumberNotEditable -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:automate.quickstart.EditProfile@6c80d78a]" started-at="2023-05-15T06:54:09 IST" name="tearDown" finished-at="2023-05-15T06:54:10 IST" duration-ms="587" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:automate.quickstart.EditProfile@6c80d78a]" started-at="2023-05-15T06:54:10 IST" name="setup" finished-at="2023-05-15T06:54:19 IST" duration-ms="9536" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="editProfile()[pri:12, instance:automate.quickstart.EditProfile@6c80d78a]" started-at="2023-05-15T06:54:19 IST" name="editProfile" finished-at="2023-05-15T06:55:00 IST" duration-ms="40399" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- editProfile -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:automate.quickstart.EditProfile@6c80d78a]" started-at="2023-05-15T06:55:00 IST" name="tearDown" finished-at="2023-05-15T06:55:00 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method signature="ProfileDeepLinking()[pri:13, instance:automate.quickstart.EditProfile@6c80d78a]" started-at="2023-05-15T06:55:00 IST" name="ProfileDeepLinking" finished-at="2023-05-15T06:55:12 IST" duration-ms="12435" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LAPTOP-T69AHU1A', ip: '192.168.20.217', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {adbExecTimeout: 60000, appActivity: com.stocky_dodo.app.MainAct..., appPackage: com.stocky_dodo.app, appWaitForLaunch: false, automationName: UiAutomator2, databaseEnabled: false, desired: {adbExecTimeout: 60000, appActivity: com.stocky_dodo.app.MainAct..., appPackage: com.stocky_dodo.app, appWaitForLaunch: false, automationName: UiAutomator2, deviceName: realme RMX3081, noReset: true, platformName: android}, deviceApiLevel: 31, deviceManufacturer: realme, deviceModel: RMX3081, deviceName: 21b7da02, deviceScreenDensity: 480, deviceScreenSize: 1080x2400, deviceUDID: 21b7da02, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, noReset: true, pixelRatio: 3, platform: LINUX, platformName: Android, platformVersion: 12, statBarHeight: 108, takesScreenshot: true, viewportRect: {height: 2050, left: 0, top: 108, width: 1080}, warnings: {}, webStorageEnabled: false}
+Session ID: 404a6e99-a19d-45e3-9741-6cab1c0f22a8
+*** Element info: {Using=accessibility id, value= Edit}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LAPTOP-T69AHU1A', ip: '192.168.20.217', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {adbExecTimeout: 60000, appActivity: com.stocky_dodo.app.MainAct..., appPackage: com.stocky_dodo.app, appWaitForLaunch: false, automationName: UiAutomator2, databaseEnabled: false, desired: {adbExecTimeout: 60000, appActivity: com.stocky_dodo.app.MainAct..., appPackage: com.stocky_dodo.app, appWaitForLaunch: false, automationName: UiAutomator2, deviceName: realme RMX3081, noReset: true, platformName: android}, deviceApiLevel: 31, deviceManufacturer: realme, deviceModel: RMX3081, deviceName: 21b7da02, deviceScreenDensity: 480, deviceScreenSize: 1080x2400, deviceUDID: 21b7da02, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, noReset: true, pixelRatio: 3, platform: LINUX, platformName: Android, platformVersion: 12, statBarHeight: 108, takesScreenshot: true, viewportRect: {height: 2050, left: 0, top: 108, width: 1080}, warnings: {}, webStorageEnabled: false}
+Session ID: 404a6e99-a19d-45e3-9741-6cab1c0f22a8
+*** Element info: {Using=accessibility id, value= Edit}
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:250)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:41)
+at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:61)
+at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+at io.appium.java_client.FindsByAccessibilityId.findElementByAccessibilityId(FindsByAccessibilityId.java:37)
+at io.appium.java_client.MobileBy$ByAccessibilityId.findElement(MobileBy.java:284)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:57)
+at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+at automate.quickstart.EditProfile.ProfileDeepLinking(EditProfile.java:474)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ProfileDeepLinking -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:automate.quickstart.EditProfile@6c80d78a]" started-at="2023-05-15T06:55:00 IST" name="setup" finished-at="2023-05-15T06:55:00 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:automate.quickstart.EditProfile@6c80d78a]" started-at="2023-05-15T06:55:12 IST" name="tearDown" finished-at="2023-05-15T06:55:12 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

@@ -26,7 +26,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite, 4 failed tests</span>
+      <span class="top-banner-font-1">1 suite, 3 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -51,7 +51,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Default_suite" class="navigator-link ">
-                    <span>C:\Users\AdityaRaj\AppData\Local\Temp\testng-eclipse--1472481058\testng-customsuite.xml</span>
+                    <span>C:\Users\AdityaRaj\AppData\Local\Temp\testng-eclipse--601002898\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -93,7 +93,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">13 methods, 4 failed,   9 passed</span>
+                    <span class="method-stats">13 methods, 3 failed,   10 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title failed">Failed methods</span>
@@ -102,11 +102,6 @@
                       <a href="#" panel-name="suite-Default_suite" class="show-methods failed suite-Default_suite"> (show)</a> <!-- show-methods failed suite-Default_suite -->
                     </span>
                     <div class="method-list-content failed suite-Default_suite">
-                      <span>
-                        <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="automate.quickstart.EditProfile" class="method navigator-link" hash-for-method="MobileNumberNotEditable">MobileNumberNotEditable</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
                       <span>
                         <img src="failed.png" width="3%"/>
                         <a href="#" panel-name="suite-Default_suite" title="automate.quickstart.EditProfile" class="method navigator-link" hash-for-method="ProfileDeepLinking">ProfileDeepLinking</a> <!-- method navigator-link -->
@@ -149,6 +144,11 @@
                       <span>
                         <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Default_suite" title="automate.quickstart.EditProfile" class="method navigator-link" hash-for-method="Gender">Gender</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="automate.quickstart.EditProfile" class="method navigator-link" hash-for-method="MobileNumberNotEditable">MobileNumberNotEditable</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -196,79 +196,6 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="MobileNumberNotEditable">
-                  </a> <!-- MobileNumberNotEditable -->
-                  <span class="method-name">MobileNumberNotEditable</span>
-                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;LAPTOP-T69AHU1A&apos;, ip: &apos;192.168.20.217&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.6&apos;
-Driver info: io.appium.java_client.android.AndroidDriver
-Capabilities {adbExecTimeout: 60000, appActivity: com.stocky_dodo.app.MainAct..., appPackage: com.stocky_dodo.app, appWaitForLaunch: false, automationName: UiAutomator2, databaseEnabled: false, desired: {adbExecTimeout: 60000, appActivity: com.stocky_dodo.app.MainAct..., appPackage: com.stocky_dodo.app, appWaitForLaunch: false, automationName: UiAutomator2, deviceName: realme RMX3081, noReset: true, platformName: android}, deviceApiLevel: 31, deviceManufacturer: realme, deviceModel: RMX3081, deviceName: 21b7da02, deviceScreenDensity: 480, deviceScreenSize: 1080x2400, deviceUDID: 21b7da02, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, noReset: true, pixelRatio: 3, platform: LINUX, platformName: Android, platformVersion: 12, statBarHeight: 108, takesScreenshot: true, viewportRect: {height: 2050, left: 0, top: 108, width: 1080}, warnings: {}, webStorageEnabled: false}
-Session ID: 69d82ae6-7084-4373-9330-b3debe0b6045
-*** Element info: {Using=xpath, value=/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.View/android.view.View/android.view.View/android.view.View/android.view.View[2]/android.widget.ScrollView/android.view.View[8]}
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:250)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:41)
-	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
-	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:61)
-	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
-	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
-	at io.appium.java_client.DefaultGenericMobileDriver.findElementByXPath(DefaultGenericMobileDriver.java:151)
-	at io.appium.java_client.AppiumDriver.findElementByXPath(AppiumDriver.java:1)
-	at io.appium.java_client.android.AndroidDriver.findElementByXPath(AndroidDriver.java:1)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:57)
-	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
-	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
-	at automate.quickstart.EditProfile.MobileNumberNotEditable(EditProfile.java:507)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:794)
-	at org.testng.TestRunner.run(TestRunner.java:596)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-	at org.testng.TestNG.runSuites(TestNG.java:1063)
-	at org.testng.TestNG.run(TestNG.java:1031)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
                   <a name="ProfileDeepLinking">
                   </a> <!-- ProfileDeepLinking -->
                   <span class="method-name">ProfileDeepLinking</span>
@@ -278,7 +205,7 @@ Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, tim
 System info: host: &apos;LAPTOP-T69AHU1A&apos;, ip: &apos;192.168.20.217&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.6&apos;
 Driver info: io.appium.java_client.android.AndroidDriver
 Capabilities {adbExecTimeout: 60000, appActivity: com.stocky_dodo.app.MainAct..., appPackage: com.stocky_dodo.app, appWaitForLaunch: false, automationName: UiAutomator2, databaseEnabled: false, desired: {adbExecTimeout: 60000, appActivity: com.stocky_dodo.app.MainAct..., appPackage: com.stocky_dodo.app, appWaitForLaunch: false, automationName: UiAutomator2, deviceName: realme RMX3081, noReset: true, platformName: android}, deviceApiLevel: 31, deviceManufacturer: realme, deviceModel: RMX3081, deviceName: 21b7da02, deviceScreenDensity: 480, deviceScreenSize: 1080x2400, deviceUDID: 21b7da02, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, noReset: true, pixelRatio: 3, platform: LINUX, platformName: Android, platformVersion: 12, statBarHeight: 108, takesScreenshot: true, viewportRect: {height: 2050, left: 0, top: 108, width: 1080}, warnings: {}, webStorageEnabled: false}
-Session ID: 69d82ae6-7084-4373-9330-b3debe0b6045
+Session ID: 404a6e99-a19d-45e3-9741-6cab1c0f22a8
 *** Element info: {Using=accessibility id, value= Edit}
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
@@ -304,7 +231,7 @@ Session ID: 69d82ae6-7084-4373-9330-b3debe0b6045
 	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:57)
 	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
 	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
-	at automate.quickstart.EditProfile.ProfileDeepLinking(EditProfile.java:472)
+	at automate.quickstart.EditProfile.ProfileDeepLinking(EditProfile.java:474)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -348,8 +275,8 @@ Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, tim
 System info: host: &apos;LAPTOP-T69AHU1A&apos;, ip: &apos;192.168.20.217&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.6&apos;
 Driver info: io.appium.java_client.android.AndroidDriver
 Capabilities {adbExecTimeout: 60000, appActivity: com.stocky_dodo.app.MainAct..., appPackage: com.stocky_dodo.app, appWaitForLaunch: false, automationName: UiAutomator2, databaseEnabled: false, desired: {adbExecTimeout: 60000, appActivity: com.stocky_dodo.app.MainAct..., appPackage: com.stocky_dodo.app, appWaitForLaunch: false, automationName: UiAutomator2, deviceName: realme RMX3081, noReset: true, platformName: android}, deviceApiLevel: 31, deviceManufacturer: realme, deviceModel: RMX3081, deviceName: 21b7da02, deviceScreenDensity: 480, deviceScreenSize: 1080x2400, deviceUDID: 21b7da02, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, noReset: true, pixelRatio: 3, platform: LINUX, platformName: Android, platformVersion: 12, statBarHeight: 108, takesScreenshot: true, viewportRect: {height: 2050, left: 0, top: 108, width: 1080}, warnings: {}, webStorageEnabled: false}
-Session ID: 69d82ae6-7084-4373-9330-b3debe0b6045
-*** Element info: {Using=xpath, value=/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.View/android.view.View/android.view.View/android.view.View/android.view.View[1]/android.widget.ImageView[4]}
+Session ID: f73a44da-d3c3-4f8c-a8b0-3c0eddb4e4d8
+*** Element info: {Using=accessibility id, value= Edit}
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -368,16 +295,13 @@ Session ID: 69d82ae6-7084-4373-9330-b3debe0b6045
 	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:61)
 	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
 	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
-	at io.appium.java_client.DefaultGenericMobileDriver.findElementByXPath(DefaultGenericMobileDriver.java:151)
-	at io.appium.java_client.AppiumDriver.findElementByXPath(AppiumDriver.java:1)
-	at io.appium.java_client.android.AndroidDriver.findElementByXPath(AndroidDriver.java:1)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at io.appium.java_client.FindsByAccessibilityId.findElementByAccessibilityId(FindsByAccessibilityId.java:37)
+	at io.appium.java_client.MobileBy$ByAccessibilityId.findElement(MobileBy.java:284)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
 	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:57)
 	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
 	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
-	at automate.quickstart.EditProfile.ProfileDeepLinkingInApp(EditProfile.java:479)
+	at automate.quickstart.EditProfile.ProfileDeepLinkingInApp(EditProfile.java:491)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -422,7 +346,7 @@ Session ID: 69d82ae6-7084-4373-9330-b3debe0b6045
 	at org.testng.Assert.assertEquals(Assert.java:122)
 	at org.testng.Assert.assertEquals(Assert.java:629)
 	at org.testng.Assert.assertEquals(Assert.java:639)
-	at automate.quickstart.EditProfile.ProfileNamelessThanthree(EditProfile.java:150)
+	at automate.quickstart.EditProfile.ProfileNamelessThanthree(EditProfile.java:151)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -493,6 +417,13 @@ Session ID: 69d82ae6-7084-4373-9330-b3debe0b6045
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
+                  <a name="MobileNumberNotEditable">
+                  </a> <!-- MobileNumberNotEditable -->
+                  <span class="method-name">MobileNumberNotEditable</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
                   <a name="ProfileNameAlreadyTaken">
                   </a> <!-- ProfileNameAlreadyTaken -->
                   <span class="method-name">ProfileNameAlreadyTaken</span>
@@ -531,7 +462,7 @@ Session ID: 69d82ae6-7084-4373-9330-b3debe0b6045
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\AdityaRaj\AppData\Local\Temp\testng-eclipse--1472481058\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\AdityaRaj\AppData\Local\Temp\testng-eclipse--601002898\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -584,55 +515,55 @@ data.addRows(13);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'checkElements')
 data.setCell(0, 2, 'automate.quickstart.EditProfile')
-data.setCell(0, 3, 80313);
+data.setCell(0, 3, 77338);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'editProfile')
 data.setCell(1, 2, 'automate.quickstart.EditProfile')
-data.setCell(1, 3, 37664);
+data.setCell(1, 3, 40399);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'Gender')
 data.setCell(2, 2, 'automate.quickstart.EditProfile')
-data.setCell(2, 3, 37354);
+data.setCell(2, 3, 37252);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'MobileNumberNotEditable')
+data.setCell(3, 1, 'ProfileDeepLinkingInApp')
 data.setCell(3, 2, 'automate.quickstart.EditProfile')
-data.setCell(3, 3, 32984);
+data.setCell(3, 3, 29751);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'DOB_negativeOutofrange1')
+data.setCell(4, 1, 'ProfileNamelessThanthree')
 data.setCell(4, 2, 'automate.quickstart.EditProfile')
-data.setCell(4, 3, 23577);
+data.setCell(4, 3, 26372);
 data.setCell(5, 0, 5)
-data.setCell(5, 1, 'Account_settings_Edit_Profile')
+data.setCell(5, 1, 'DOB_negativeOutofrange1')
 data.setCell(5, 2, 'automate.quickstart.EditProfile')
-data.setCell(5, 3, 21872);
+data.setCell(5, 3, 23391);
 data.setCell(6, 0, 6)
-data.setCell(6, 1, 'ProfileDeepLinking')
+data.setCell(6, 1, 'Account_settings_Edit_Profile')
 data.setCell(6, 2, 'automate.quickstart.EditProfile')
-data.setCell(6, 3, 21387);
+data.setCell(6, 3, 22655);
 data.setCell(7, 0, 7)
 data.setCell(7, 1, 'ProfileNameEmpty')
 data.setCell(7, 2, 'automate.quickstart.EditProfile')
-data.setCell(7, 3, 20616);
+data.setCell(7, 3, 21841);
 data.setCell(8, 0, 8)
-data.setCell(8, 1, 'ProfileNamelessThanthree')
+data.setCell(8, 1, 'DOB_negativeOutOfRange2')
 data.setCell(8, 2, 'automate.quickstart.EditProfile')
-data.setCell(8, 3, 20173);
+data.setCell(8, 3, 17748);
 data.setCell(9, 0, 9)
-data.setCell(9, 1, 'DOB_negativeOutOfRange2')
+data.setCell(9, 1, 'ProfileNameAlreadyTaken')
 data.setCell(9, 2, 'automate.quickstart.EditProfile')
-data.setCell(9, 3, 17723);
+data.setCell(9, 3, 12666);
 data.setCell(10, 0, 10)
-data.setCell(10, 1, 'ProfileNameAlreadyTaken')
+data.setCell(10, 1, 'MobileNumberNotEditable')
 data.setCell(10, 2, 'automate.quickstart.EditProfile')
-data.setCell(10, 3, 13138);
+data.setCell(10, 3, 12444);
 data.setCell(11, 0, 11)
-data.setCell(11, 1, 'ProfileDeepLinkingInApp')
+data.setCell(11, 1, 'ProfileDeepLinking')
 data.setCell(11, 2, 'automate.quickstart.EditProfile')
-data.setCell(11, 3, 10139);
+data.setCell(11, 3, 12435);
 data.setCell(12, 0, 12)
 data.setCell(12, 1, 'hamburger_profile')
 data.setCell(12, 2, 'automate.quickstart.EditProfile')
-data.setCell(12, 3, 8626);
+data.setCell(12, 3, 8069);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
@@ -669,164 +600,162 @@ return data;
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">checkElements</span>
-                <span class="method-start">10944 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">tearDown</span>
-                <span class="method-start">91259 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">setup</span>
-                <span class="method-start">91954 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">hamburger_profile</span>
-                <span class="method-start">101714 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">tearDown</span>
-                <span class="method-start">110342 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">setup</span>
-                <span class="method-start">110879 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">ProfileNameAlreadyTaken</span>
-                <span class="method-start">120363 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">tearDown</span>
-                <span class="method-start">133502 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">setup</span>
-                <span class="method-start">134161 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">ProfileNameEmpty</span>
-                <span class="method-start">143614 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">tearDown</span>
-                <span class="method-start">164231 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">setup</span>
-                <span class="method-start">164791 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">ProfileNamelessThanthree</span>
-                <span class="method-start">174419 ms</span>
+                <span class="method-start">11272 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">194593 ms</span>
+                <span class="method-start">37648 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setup</span>
-                <span class="method-start">195184 ms</span>
+                <span class="method-start">38214 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">checkElements</span>
+                <span class="method-start">47897 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">125237 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">125884 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">hamburger_profile</span>
+                <span class="method-start">135369 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">143441 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">144087 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">ProfileNameAlreadyTaken</span>
+                <span class="method-start">154531 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">167198 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">167730 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">ProfileNameEmpty</span>
+                <span class="method-start">177226 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">199070 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">199758 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">DOB_negativeOutofrange1</span>
-                <span class="method-start">204733 ms</span>
+                <span class="method-start">210465 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">228310 ms</span>
+                <span class="method-start">233858 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setup</span>
-                <span class="method-start">228819 ms</span>
+                <span class="method-start">234369 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">DOB_negativeOutOfRange2</span>
-                <span class="method-start">238623 ms</span>
+                <span class="method-start">244114 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">256348 ms</span>
+                <span class="method-start">261863 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setup</span>
-                <span class="method-start">257009 ms</span>
+                <span class="method-start">262505 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">Gender</span>
-                <span class="method-start">266561 ms</span>
+                <span class="method-start">272078 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">303916 ms</span>
+                <span class="method-start">309331 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setup</span>
-                <span class="method-start">304608 ms</span>
+                <span class="method-start">309894 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">Account_settings_Edit_Profile</span>
-                <span class="method-start">314312 ms</span>
+                <span class="method-start">319483 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">336185 ms</span>
+                <span class="method-start">342140 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setup</span>
-                <span class="method-start">336186 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">ProfileDeepLinking</span>
-                <span class="method-start">336187 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">tearDown</span>
-                <span class="method-start">357575 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="test-method">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">MobileNumberNotEditable</span>
-                <span class="method-start">357575 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method before">
-                <span class="method-name">setup</span>
-                <span class="method-start">357575 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="configuration-method after">
-                <span class="method-name">tearDown</span>
-                <span class="method-start">390562 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="test-method">
-                <span class="method-name">editProfile</span>
-                <span class="method-start">390563 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method before">
-                <span class="method-name">setup</span>
-                <span class="method-start">390563 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="configuration-method after">
-                <span class="method-name">tearDown</span>
-                <span class="method-start">428227 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">setup</span>
-                <span class="method-start">428228 ms</span>
+                <span class="method-start">342868 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">ProfileDeepLinkingInApp</span>
-                <span class="method-start">428228 ms</span>
+                <span class="method-start">352418 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">438369 ms</span>
+                <span class="method-start">382173 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">382868 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">MobileNumberNotEditable</span>
+                <span class="method-start">392727 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">405172 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">405759 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">editProfile</span>
+                <span class="method-start">415296 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">455696 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">ProfileDeepLinking</span>
+                <span class="method-start">455697 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">455697 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">468135 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
