@@ -1,103 +1,74 @@
 package automate.quickstart;
 
-import static org.testng.Assert.assertEquals;
+import static org.junit.Assert.assertFalse;
+import static org.junit.Assert.assertTrue;
+import static org.testng.Assert.assertNotNull;
 
-import io.appium.java_client.android.Activity;
-import io.appium.java_client.android.AndroidDriver;
-import java.util.concurrent.TimeUnit;
-
-import javax.imageio.ImageIO;
-
-import org.openqa.selenium.remote.DesiredCapabilities;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
-import org.testng.annotations.AfterClass;
-import org.testng.annotations.BeforeClass;
-import org.testng.annotations.Test;
-import io.appium.java_client.android.AndroidElement;
-import org.openqa.selenium.remote.DesiredCapabilities;
-import java.net.URL;
-
-import java.util.ArrayList;
-import java.util.List;
-import java.util.NoSuchElementException;
 import java.awt.Color;
-import java.awt.image.BufferedImage;
-import java.io.BufferedReader;
-import java.io.File;
 import java.io.FileReader;
-import java.io.FileWriter;
 import java.io.IOException;
-import java.io.InputStreamReader;
 import java.net.MalformedURLException;
 import java.net.URL;
-import java.time.Duration;
+import java.util.List;
+import java.util.NoSuchElementException;
 import java.util.concurrent.TimeUnit;
-import com.opencsv.CSVReader;
-import com.opencsv.exceptions.CsvException;
+
 import org.openqa.selenium.By;
-import org.openqa.selenium.Dimension;
-import org.openqa.selenium.JavascriptExecutor;
-import org.openqa.selenium.OutputType;
-import org.openqa.selenium.Point;
 import org.openqa.selenium.StaleElementReferenceException;
-import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.testng.Reporter;
 import org.testng.annotations.Test;
+
+import com.opencsv.CSVReader;
+import com.opencsv.exceptions.CsvException;
+
 import io.appium.java_client.MobileBy;
-import io.appium.java_client.MobileDriver;
-import io.appium.java_client.MobileElement;
 import io.appium.java_client.TouchAction;
 import io.appium.java_client.android.AndroidDriver;
-import io.appium.java_client.android.AndroidElement;
-import io.appium.java_client.touch.WaitOptions;
-import io.appium.java_client.touch.offset.ElementOption;
 import io.appium.java_client.touch.offset.PointOption;
 
-public class Registration extends AppiumEXtendedMethods{
+public class Registration extends AppiumEXtendedMethods {
 	public void setup() throws MalformedURLException {
-		 
-			DesiredCapabilities caps = new DesiredCapabilities();
-			// caps.setCapability("deviceName", "Sheetal");
-			caps.setCapability("deviceName", "realme RMX3081");
-			caps.setCapability("platformName", "Android");
-			caps.setCapability("appPackage", "com.stocky_dodo.app");
-			caps.setCapability("appActivity", "com.stocky_dodo.app.MainActivity");
-			caps.setCapability("appium:automationName", "UiAutomator2");
-			caps.setCapability("noReset", true);
-			caps.setCapability("appium:appWaitForLaunch", false);
-			caps.setCapability("adbExecTimeout", 60000);
 
-			URL url = new URL("http://127.0.0.1:4723/wd/hub");
+		DesiredCapabilities caps = new DesiredCapabilities();
+		// caps.setCapability("deviceName", "Sheetal");
+		caps.setCapability("deviceName", "realme RMX3081");
+		caps.setCapability("platformName", "Android");
+		caps.setCapability("appPackage", "com.stocky_dodo.app");
+		caps.setCapability("appActivity", "com.stocky_dodo.app.MainActivity");
+		caps.setCapability("appium:automationName", "UiAutomator2");
+		caps.setCapability("noReset", true);
+		caps.setCapability("appium:appWaitForLaunch", false);
+		caps.setCapability("adbExecTimeout", 60000);
 
-			driver = new AndroidDriver<MobileElement>(url, caps);
-			driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-					
-			
-		}
-	@Test 
-	public void splashScreen()
-	{
-		
+		URL url = new URL("http://127.0.0.1:4723/wd/hub");
+
+		driver = new AndroidDriver<WebElement>(url, caps);
+		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+
 	}
-	a
-@Test
-public void sendOTPisDisable()
-{
-	
-}
-	
-//@Test(priority = 1)
+
+	@Test
+	public void splashScreen() {
+
+	}
+
+	@Test
+	public void sendOTPisDisable() throws IOException {
+		WebElement sOTP = driver.findElement(MobileBy.xpath("//android.widget.Button[@content-desc='Send OTP']"));
+		assertTrue("send otp is not disabled", isDisabled(getColor(sOTP)));
+
+	}
+
+@Test(priority = 1)
 
 	public void registrationLessThanTen() throws IOException, CsvException {
-		setup();
-		//blockNotifcation();
+		
+		// blockNotifcation();
 		CSVReader reader = new CSVReader(new FileReader("C:\\Users\\AdityaRaj\\Downloads\\automation_data.csv"));
 
 		// Read the first row from the CSV file and get the data from the second column
@@ -110,26 +81,24 @@ public void sendOTPisDisable()
 		String data = rows.get(rowNum)[colNum];
 
 		WebDriverWait wait = new WebDriverWait(driver, 10);
-		MobileElement cancel = driver.findElement(By.xpath(
+		WebElement cancel = driver.findElement(By.xpath(
 				"//android.widget.LinearLayout[@content-desc='Choose an Account']/android.widget.LinearLayout/android.widget.Button"));
 		cancel.click();
-		MobileElement myTextField = driver.findElement(MobileBy.xpath(
+		WebElement myTextField = driver.findElement(MobileBy.xpath(
 				"/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.View/android.view.View/android.view.View/android.view.View/android.view.View/android.view.View/android.view.View/android.widget.EditText"));
 
 		myTextField.sendKeys(data);
 
 		// ait.until(ExpectedConditions.invisibilityOf(driver.findElement(MobileBy.AccessibilityId("Login
 		// / Register"))));
-		// MobileElement out= driver.findElement(MobileBy.AccessibilityId("Login /
-		
-		
+		// WebElement out= driver.findElement(MobileBy.AccessibilityId("Login /
+
 		// Register"));
 		driver.navigate().back();
-		
-	
-		MobileElement sOTP = driver.findElement(MobileBy.xpath("//android.widget.Button[@content-desc='Send OTP']"));
+
+		WebElement sOTP = driver.findElement(MobileBy.xpath("//android.widget.Button[@content-desc='Send OTP']"));
 		sOTP.click();
-		MobileElement sendOTP = null;
+		WebElement sendOTP = null;
 		String toasterMessage = driver.findElement(By.xpath("//android.widget.Toast[1]")).getAttribute("name");
 		try {
 			sendOTP = driver.findElement(MobileBy.AccessibilityId("Change number"));
@@ -151,7 +120,7 @@ public void sendOTPisDisable()
 
 	}
 
-	//@Test(priority = 2)
+	@Test(priority = 2)
 	public void registrationNegativeTestCaseZeroInput() throws IOException, CsvException, InterruptedException {
 		CSVReader reader = new CSVReader(new FileReader("C:\\Users\\AdityaRaj\\Downloads\\automation_data.csv"));
 
@@ -163,10 +132,10 @@ public void sendOTPisDisable()
 		int rowNum = 2; // The row number you want to read
 		int colNum = 0; // The column number you want to read
 		String data = rows.get(rowNum)[colNum];
-		// MobileElement out= driver.findElement(MobileBy.AccessibilityId("Login /
+		// WebElement out= driver.findElement(MobileBy.AccessibilityId("Login /
 		// Register"));
 		// driver.navigate().back();;
-		MobileElement TextField = driver.findElement(MobileBy.className("android.widget.EditText"));
+		WebElement TextField = driver.findElement(MobileBy.className("android.widget.EditText"));
 		TextField.click();
 		TextField.clear();
 		TextField.sendKeys(data);
@@ -175,9 +144,9 @@ public void sendOTPisDisable()
 		String getText = TextField.getText();
 		String expectedInput = "0";
 		Assert.assertEquals(getText, expectedInput, "Number input is not truncated correctly");
-		// //MobileElement out= driver.findElement(MobileBy.AccessibilityId("Login /
+		// //WebElement out= driver.findElement(MobileBy.AccessibilityId("Login /
 		// Register"));
-		MobileElement sendOTP = null;
+		WebElement sendOTP = null;
 
 		sendOTP = driver.findElement(MobileBy.xpath("//android.widget.Button[@content-desc='Send OTP']"));
 		sendOTP.click();
@@ -214,9 +183,10 @@ public void sendOTPisDisable()
 		Assert.assertEquals(getText2, expectedInput, "Number input is not truncated correctly");
 	}
 
-	//@Test(priority = 4)
+	@Test(priority = 4)
 
-	public void RegistrationPositveTestCase() throws IOException, CsvException, InterruptedException,	NoSuchElementException
+	public void RegistrationPositveTestCase()
+			throws IOException, CsvException, InterruptedException, NoSuchElementException
 
 	{
 
@@ -227,12 +197,12 @@ public void sendOTPisDisable()
 			e.printStackTrace();
 		}
 
-		// MobileElement out= driver.findElement(MobileBy.AccessibilityId("Login /
+		// WebElement out= driver.findElement(MobileBy.AccessibilityId("Login /
 		// Register"));
 		// driver.navigate().back();;
 		// WebDriverWait wait = new WebDriverWait(driver, 5);
 
-		MobileElement TextField = driver.findElement(MobileBy.className("android.widget.EditText"));
+		WebElement TextField = driver.findElement(MobileBy.className("android.widget.EditText"));
 		TextField.click();
 		TextField.clear();
 		CSVReader reader = new CSVReader(new FileReader("C:\\Users\\AdityaRaj\\Downloads\\automation_data.csv"));
@@ -248,27 +218,26 @@ public void sendOTPisDisable()
 		TextField.sendKeys(data);
 
 		WebDriverWait waits = new WebDriverWait(driver, 20);
-		MobileElement TermNdConditions = driver.findElement(MobileBy.AccessibilityId("Terms & Conditions"));
+		WebElement TermNdConditions = driver.findElement(MobileBy.AccessibilityId("Terms & Conditions"));
 		TermNdConditions.click();
-		//MobileElement elementB = driver.findElement(MobileBy.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.View/android.view.View/android.view.View/android.view.View/android.view.View[2]/android.webkit.WebView/android.webkit.WebView/android.view.View/android.view.View/android.view.View/android.widget.ListView/android.widget.ListView/android.view.View[2]/android.widget.TextView"));
+		// WebElement elementB =
+		// driver.findElement(MobileBy.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.View/android.view.View/android.view.View/android.view.View/android.view.View[2]/android.webkit.WebView/android.webkit.WebView/android.view.View/android.view.View/android.view.View/android.widget.ListView/android.widget.ListView/android.view.View[2]/android.widget.TextView"));
 
 		// Create a loop to scroll until the element is visible
-		
-		    // Create a new UiScrollable object
-		
-		MobileElement scrollable = driver.findElement(MobileBy.AndroidUIAutomator(
-		        "new UiScrollable(new UiSelector().scrollable(true)).setAsVerticalList().setMaxSearchSwipes(25).scrollIntoView("
-		        + "new UiSelector().textContains(\"Acceptance of\"))"));
-		    // Wait for a short time to allow the screen to update
-		    Thread.sleep(500);
-		
 
-		
+		// Create a new UiScrollable object
+
+		WebElement scrollable = driver.findElement(MobileBy.AndroidUIAutomator(
+				"new UiScrollable(new UiSelector().scrollable(true)).setAsVerticalList().setMaxSearchSwipes(25).scrollIntoView("
+						+ "new UiSelector().textContains(\"Acceptance of\"))"));
+		// Wait for a short time to allow the screen to update
+		Thread.sleep(500);
+
 		// Find all the locators present on the screen using a locator strategy that is
 		// appropriate for your application
 //
 //		// Find the first visible paragraph element and retrieve its text content
-//		MobileElement currentParagraph = driver.findElement(By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.View/android.view.View/android.view.View/android.view.View/android.view.View[2]/android.webkit.WebView/android.webkit.WebView/android.view.View/android.view.View/android.view.View/android.view.View/android.widget.TextView[1]"));
+//		WebElement currentParagraph = driver.findElement(By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.View/android.view.View/android.view.View/android.view.View/android.view.View[2]/android.webkit.WebView/android.webkit.WebView/android.view.View/android.view.View/android.view.View/android.view.View/android.widget.TextView[1]"));
 //		 // Define the maximum number of times you want to scroll down
 //        int max_scrolls = 10;
 //        int scroll_count = 0;
@@ -278,15 +247,15 @@ public void sendOTPisDisable()
 //
 //        while (scroll_count < max_scrolls) {
 //            // Get all locators that are currently visible on the screen
-//            List<MobileElement> locators = driver.findElements(MobileBy.xpath("//*[not(self::script)][text()]"));
+//            List<WebElement> locators = driver.findElements(MobileBy.xpath("//*[not(self::script)][text()]"));
 //
 //            // Get the text of each locator and add it to the list
-//            for (MobileElement locator : locators) {
+//            for (WebElement locator : locators) {
 //                locator_text.add(locator.getText());
 //            }
 //
 //            // Scroll down to the bottom of the page
-//            (MobileElement)driver.findElementByAndroidUIAutomator("new UiScrollable(new UiSelector().scrollable(true).instance(0)).scrollIntoView(new UiSelector().textMatches(\".*\").instance(0));");
+//            (WebElement)driver.findElementByAndroidUIAutomator("new UiScrollable(new UiSelector().scrollable(true).instance(0)).scrollIntoView(new UiSelector().textMatches(\".*\").instance(0));");
 //
 //            // Wait for the page to load
 //            Thread.sleep(2000);
@@ -311,23 +280,22 @@ public void sendOTPisDisable()
 		Thread.sleep(5000);
 		driver.navigate().back();
 		Thread.sleep(5000);
-		MobileElement sOTP = driver.findElement(MobileBy.xpath("//android.widget.Button[@content-desc='Send OTP']"));
-	Color color=	getColor(sOTP);
+		WebElement sOTP = driver.findElement(MobileBy.xpath("//android.widget.Button[@content-desc='Send OTP']"));
+		Color color = getColor(sOTP);
 		// Get the background color of the button when it is enabled
 //		String enabledColor = sOTP.getCssValue("background-color");
-	//MobileElement myCheckboxes = driver.findElement(MobileBy.className("android.widget.CheckBoxssv"));
-		MobileElement myCheckbox = driver.findElement(MobileBy.className("android.widget.CheckBox"));
+		// WebElement myCheckboxes =
+		// driver.findElement(MobileBy.className("android.widget.CheckBoxssv"));
+		WebElement myCheckbox = driver.findElement(MobileBy.className("android.widget.CheckBox"));
 		myCheckbox.click();
 		System.out.println(isDisabled(color));
 		waits = new WebDriverWait(driver, 20);
 		getColor(sOTP);
-		
 
+		// Disable the button (assuming this changes the background color)
+		// ...
 
-				// Disable the button (assuming this changes the background color)
-				// ...
-
-				// Get the background color of the button when it is disabled
+		// Get the background color of the button when it is disabled
 //				String disabledColor = sOTP.getCssValue("background-color");
 //
 //				// Compare the two colors to validate the button's status
@@ -341,7 +309,7 @@ public void sendOTPisDisable()
 
 		sOTP.click();
 
-		MobileElement ChangeNumber = driver.findElement(MobileBy.AccessibilityId("Change number"));
+		WebElement ChangeNumber = driver.findElement(MobileBy.AccessibilityId("Change number"));
 		ChangeNumber.click();
 		Thread.sleep(5000);
 		rowNum = 4; // The row number you want to read
@@ -351,28 +319,26 @@ public void sendOTPisDisable()
 		TextField.clear();
 		TextField.sendKeys(data);
 //		 driver.navigate().back();
-		MobileElement sOTPs = driver.findElement(MobileBy.xpath("//android.widget.Button[@content-desc='Send OTP']"));
+		WebElement sOTPs = driver.findElement(MobileBy.xpath("//android.widget.Button[@content-desc='Send OTP']"));
 		sOTPs.click();
-		//Switch to Message app
-		
+		// Switch to Message app
 
-		
 	}
-	//[r=210,g=255,b=64]  bright shade of green with a yellowish tint.
+	// [r=210,g=255,b=64] bright shade of green with a yellowish tint.
 
-	//@Test(priority = 3)
+	@Test(priority = 3)
 
 	public void RegistrationTermandConditionNegativeTestCase() throws IOException, CsvException, InterruptedException
 
 	{
 
-		// MobileElement out= driver.findElement(MobileBy.AccessibilityId("Login /
+		// WebElement out= driver.findElement(MobileBy.AccessibilityId("Login /
 		// Register"));
 //		     driver.navigate().back();;
 //		    WebDriverWait wait = new WebDriverWait(driver, 5);
 		Thread.sleep(5000);
 
-		MobileElement TextField = driver.findElement(MobileBy.className("android.widget.EditText"));
+		WebElement TextField = driver.findElement(MobileBy.className("android.widget.EditText"));
 		TextField.click();
 		TextField.clear();
 		CSVReader reader = new CSVReader(new FileReader("C:\\Users\\AdityaRaj\\Downloads\\automation_data.csv"));
@@ -391,13 +357,11 @@ public void sendOTPisDisable()
 
 		waits = new WebDriverWait(driver, 20);
 
-		MobileElement changeNumber = null;
-		MobileElement	sendOTP = driver.findElement(MobileBy.xpath("//android.widget.Button[@content-desc='Send OTP']"));
+		WebElement changeNumber = null;
+		WebElement sendOTP = driver.findElement(MobileBy.xpath("//android.widget.Button[@content-desc='Send OTP']"));
 
 		sendOTP.click();
-		
 
-		
 		String toasterMessage = driver.findElement(By.xpath("//android.widget.Toast[1]")).getAttribute("name");
 		try {
 			changeNumber = driver.findElement(MobileBy.AccessibilityId("Change number"));
@@ -417,15 +381,15 @@ public void sendOTPisDisable()
 
 	}
 
-	//@Test(priority = 5)
+	@Test(priority = 5)
 	public void registrationTellUsNegativeTestCase() throws InterruptedException, IOException, CsvException { // Find
 																												// all
 																												// elements
 																												// with
-					Thread.sleep(5000);																							// ID
-																												// "notification_stack_scroller"
+		Thread.sleep(5000); // ID
+		// "notification_stack_scroller"
 
-		MobileElement Name = driver.findElement(MobileBy.xpath(
+		WebElement Name = driver.findElement(MobileBy.xpath(
 				"/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.View/android.view.View/android.view.View/android.view.View/android.view.View/android.view.View/android.widget.ScrollView/android.widget.EditText[1]"));
 		Name.click();
 
@@ -450,11 +414,11 @@ public void sendOTPisDisable()
 
 		String data = rows.get(rowNum)[colNum];
 		Name.sendKeys(data);
-		String errorData=data;
+		String errorData = data;
 
-		MobileElement Gender = driver.findElement(MobileBy.xpath(" //android.view.View[@content-desc='Male']"));
+		WebElement Gender = driver.findElement(MobileBy.xpath(" //android.view.View[@content-desc='Male']"));
 		Gender.click();
-		MobileElement emailField = driver.findElement(By.xpath(
+		WebElement emailField = driver.findElement(By.xpath(
 				"/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.View/android.view.View/android.view.View/android.view.View/android.view.View/android.view.View/android.widget.ScrollView/android.widget.EditText[2]"));
 		emailField.click();
 		rowNum = 1; // The row number you want to read
@@ -465,7 +429,7 @@ public void sendOTPisDisable()
 		emailField.sendKeys(email);
 		driver.navigate().back();
 
-		MobileElement emailwarning = driver.findElement(MobileBy.AccessibilityId("Enter valid email"));
+		WebElement emailwarning = driver.findElement(MobileBy.AccessibilityId("Enter valid email"));
 
 		if (emailwarning.isDisplayed())
 
@@ -481,7 +445,7 @@ public void sendOTPisDisable()
 			emailField.sendKeys(data);
 		}
 		driver.navigate().back();
-		MobileElement emailwarningforempty = driver.findElement(MobileBy.AccessibilityId("Email cannot be empty"));
+		WebElement emailwarningforempty = driver.findElement(MobileBy.AccessibilityId("Email cannot be empty"));
 
 		if (emailwarningforempty.isDisplayed()) {
 			emailField.clear();
@@ -493,29 +457,28 @@ public void sendOTPisDisable()
 
 			emailField.sendKeys(data);
 		}
-		MobileElement TellUs = driver
+		WebElement TellUs = driver
 				.findElement(MobileBy.xpath("//android.view.View[@content-desc='Tell us about yourself']"));
 		TellUs.click();
-		// MobileElement nextButton=
+		// WebElement nextButton=
 		// driver.findElement(MobileBy.AccessibilityId("Next"));
 
 		TellUs.click();
-		MobileElement nextButton = driver.findElement(MobileBy.AccessibilityId("Next"));
+		WebElement nextButton = driver.findElement(MobileBy.AccessibilityId("Next"));
 		WebDriverWait wait = new WebDriverWait(driver, 10); // Wait for up to 10 seconds
 		wait.until(ExpectedConditions.visibilityOf(nextButton)); // Wait for the element to be visible on the page
 
 		Thread.sleep(5000);
 
 		nextButton.click();
-		MobileElement elementFound = null;
+		WebElement elementFound = null;
 
 		try {
 			elementFound = driver.findElement(MobileBy.AccessibilityId("Select your Dodo avatar"));
 			// Reporter.log("Element found: " + elementFound);
-			//driver.navigate().back();
+			// driver.navigate().back();
 			if (elementFound != null) {
-				
-				
+
 				Reporter.log(errorData);
 				Assert.assertNull(elementFound);
 
@@ -530,9 +493,9 @@ public void sendOTPisDisable()
 
 	}
 
-	//@Test(priority = 6)
+	@Test(priority = 6)
 	public void ReferralNegative() {
-		MobileElement referral = driver.findElement(MobileBy.xpath("/hierarchy/android.widget.FrameLayout"
+		WebElement referral = driver.findElement(MobileBy.xpath("/hierarchy/android.widget.FrameLayout"
 				+ "/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/"
 				+ "android.widget.FrameLayout/android.view.View/android.view.View/android.view.View"
 				+ "/android.view.View/android.view.View/android.view.View/android.widget.ScrollView/"
@@ -547,7 +510,7 @@ public void sendOTPisDisable()
 		// driver.findElement(By.xpath("//android.widget.Toast")).getAttribute("name");
 //	
 		try {
-			MobileElement applied = null;
+			WebElement applied = null;
 			applied = driver.findElement(MobileBy.AccessibilityId("Applied"));
 			if (applied.isDisplayed()) {
 				Assert.assertNull(applied);
@@ -563,7 +526,7 @@ public void sendOTPisDisable()
 		referral.sendKeys("123");
 		driver.findElement(MobileBy.AccessibilityId("Apply")).click();
 		try {
-			MobileElement applied = null;
+			WebElement applied = null;
 			applied = driver.findElement(MobileBy.AccessibilityId("Applied"));
 			if (applied.isDisplayed()) {
 				Assert.assertNull(applied);
@@ -575,9 +538,9 @@ public void sendOTPisDisable()
 		}
 	}
 
-	//@Test(priority = 7)
+	@Test(priority = 7)
 	public void Referralpositivecase() {
-		MobileElement referral = driver.findElement(MobileBy.xpath("/hierarchy/android.widget.FrameLayout"
+		WebElement referral = driver.findElement(MobileBy.xpath("/hierarchy/android.widget.FrameLayout"
 				+ "/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/"
 				+ "android.widget.FrameLayout/android.view.View/android.view.View/android.view.View"
 				+ "/android.view.View/android.view.View/android.view.View/android.widget.ScrollView/"
@@ -587,10 +550,12 @@ public void sendOTPisDisable()
 		referral.sendKeys("SHE100");
 		driver.findElement(MobileBy.AccessibilityId("Apply")).click();
 		try {
-			MobileElement applied = null;
+			WebElement applied = null;
 			applied = driver.findElement(MobileBy.AccessibilityId("Applied"));
 			if (applied.isDisplayed()) {
 				Assert.assertNotNull(applied);
+				System.out.println(referral.isEnabled());
+				assertFalse(referral.isEnabled());
 
 			}
 		} catch (Exception e) {
@@ -607,7 +572,7 @@ public void sendOTPisDisable()
 
 	}
 
-	//@Test(priority = 8)
+	@Test(priority = 8)
 	public void RegistrationProfileName_NegativeTestCase() throws InterruptedException, IOException, CsvException {
 		CSVReader reader = new CSVReader(new FileReader("C:\\Users\\AdityaRaj\\Downloads\\automation_data.csv"));
 
@@ -616,9 +581,9 @@ public void sendOTPisDisable()
 		List<String[]> rows = reader.readAll();
 
 		Thread.sleep(5000);
-		MobileElement nextButton = driver.findElement(MobileBy.xpath("//android.widget.Button[@content-desc='Next']"));
+		WebElement nextButton = driver.findElement(MobileBy.xpath("//android.widget.Button[@content-desc='Next']"));
 		nextButton.click();
-		// MobileElement outside=
+		// WebElement outside=
 		// driver.findElement(MobileBy.xpath("//android.view.View[@content-desc='* Your
 		// Profile Name Required']"));
 		// driver.navigate().back();;
@@ -632,7 +597,7 @@ public void sendOTPisDisable()
 //			    driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 //			 
 //			   try { 
-//				   MobileElement warningMessage1= driver.findElement(MobileBy.xpath("//android.view.View[@content-desc='That profile name is taken, Try another.']"));
+//				   WebElement warningMessage1= driver.findElement(MobileBy.xpath("//android.view.View[@content-desc='That profile name is taken, Try another.']"));
 //				    
 //   	driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 //		        	int x_coord = 542;
@@ -652,7 +617,8 @@ public void sendOTPisDisable()
 		String data = rows.get(rowNum)[colNum];
 
 		Thread.sleep(5000);
-	//	MobileElement elementFound = driver.findElement(MobileBy.AccessibilityId("Select your Dodo avatar"));
+		// WebElement elementFound = driver.findElement(MobileBy.AccessibilityId("Select
+		// your Dodo avatar"));
 		Thread.sleep(5000);
 //		//WebElement avatar = driver.findElement(MobileBy.xpath(
 //				"/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.View/android.view.View/android.view.View/android.view.View/android.view.View/android.widget.ScrollView/android.view.View[1]/android.view.View/android.view.View[8]/android.view.View/android.widget.ImageView[2]"));
@@ -669,17 +635,16 @@ public void sendOTPisDisable()
 //				.waitAction(WaitOptions.waitOptions(Duration.ofMillis(5000)))
 //				.moveTo(ElementOption.element(elementFound, endX, endY)).release().perform();
 //
-Thread.sleep(5000);
+		Thread.sleep(5000);
 		WebElement avatar1 = driver.findElement(MobileBy.xpath(
 				"/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.View/android.view.View/android.view.View/android.view.View/android.view.View/android.widget.ScrollView/android.view.View[2]/android.view.View/android.view.View[5]/android.widget.ImageView"));
-	
+
 		WebElement profileName = driver.findElement(By.className("android.widget.EditText"));
-	
-//		MobileElement element = driver.findElement(By.id("myElementId"));
+
+//		WebElement element = driver.findElement(By.id("myElementId"));
 //		driver.findElement(MobileBy.AndroidUIAutomator("new UiScrollable(new UiSelector().scrollable(true)).scrollIntoView("
 //		        + "new UiSelector().resourceId(\"" + element.getId() + "\"))"));
 
-	
 		profileName.click();
 		profileName.sendKeys(data);
 		driver.navigate().back();
@@ -689,19 +654,19 @@ Thread.sleep(5000);
 		// driver.navigate().back();;
 		nextScreen.click();
 		String toasterMessage = driver.findElement(By.xpath("//android.widget.Toast[1]")).getAttribute("name");
-		//toaster message
-	//	Reporter.log(toasterMessage);
+		// toaster message
+		// Reporter.log(toasterMessage);
 // avatar.click();
 		profileName.click();
 		profileName.clear();
 		driver.navigate().back();
 		avatar1.click();
 		Thread.sleep(2000);
-		MobileElement NextScreen = driver.findElement(MobileBy.AccessibilityId("Next"));
+		WebElement NextScreen = driver.findElement(MobileBy.AccessibilityId("Next"));
 		NextScreen.click();
 		toasterMessage = driver.findElement(By.xpath("//android.widget.Toast")).getAttribute("name");
-		//toaster message
-		//Reporter.log(toasterMessage);
+		// toaster message
+		// Reporter.log(toasterMessage);
 		// WebElement profileName =
 		// driver.findElement(By.className("android.widget.EditText"));
 
@@ -736,10 +701,10 @@ Thread.sleep(5000);
 //					       toasterMessage=null;
 //					       toasterMessage = driver.findElement(By.xpath("//android.widget.Toast[1]")).getAttribute("name");
 		if (warningMessage == null) {
-			//Reporter.log(warningMessage.getText());
+			// Reporter.log(warningMessage.getText());
 			Assert.assertNotNull(warningMessage);
 		}
-		MobileElement NextSC = driver.findElement(MobileBy.AccessibilityId("Next"));
+		WebElement NextSC = driver.findElement(MobileBy.AccessibilityId("Next"));
 		NextSC.click();
 
 		rowNum = 3; // The row number you want to read
@@ -759,7 +724,7 @@ Thread.sleep(5000);
 //						       toasterMessage=null;
 //						       toasterMessage = driver.findElement(By.xpath("//android.widget.Toast[1]")).getAttribute("name");
 		if (warningMessage == null) {
-			//Reporter.log(warningMessage.getText());
+			// Reporter.log(warningMessage.getText());
 			Assert.assertNotNull(warningMessage);
 		}
 //					driver.closeApp();
@@ -776,9 +741,10 @@ Thread.sleep(5000);
 
 	public void profileName() throws InterruptedException {
 		Thread.sleep(5000);
-		//MobileElement nextButton = driver.findElement(MobileBy.xpath("//android.widget.Button[@content-desc='Next']"));
-	//	nextButton.click();
-		// MobileElement outside=
+		// WebElement nextButton =
+		// driver.findElement(MobileBy.xpath("//android.widget.Button[@content-desc='Next']"));
+		// nextButton.click();
+		// WebElement outside=
 		// driver.findElement(MobileBy.xpath("//android.view.View[@content-desc='* Your
 		// Profile Name Required']"));
 		// driver.navigate().back();;
@@ -793,7 +759,7 @@ Thread.sleep(5000);
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 
 		try {
-			MobileElement warningMessage1 = driver.findElement(
+			WebElement warningMessage1 = driver.findElement(
 					MobileBy.xpath("//android.view.View[@content-desc='That profile name is taken, Try another.']"));
 
 			driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
@@ -831,23 +797,23 @@ Thread.sleep(5000);
 	}
 
 	public void tellUsAbout() {
-		MobileElement Name = driver.findElement(MobileBy.xpath(
+		WebElement Name = driver.findElement(MobileBy.xpath(
 				"/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.View/android.view.View/android.view.View/android.view.View/android.view.View/android.view.View/android.widget.ScrollView/android.widget.EditText[1]"));
 		Name.click();
 		Name.sendKeys("ADITYA RAJ");
-		MobileElement Gender = driver.findElement(MobileBy.xpath(" //android.view.View[@content-desc='Male']"));
+		WebElement Gender = driver.findElement(MobileBy.xpath(" //android.view.View[@content-desc='Male']"));
 		Gender.click();
-		MobileElement emailField = driver.findElement(By.xpath(
+		WebElement emailField = driver.findElement(By.xpath(
 				"/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.View/android.view.View/android.view.View/android.view.View/android.view.View/android.view.View/android.widget.ScrollView/android.widget.EditText[2]"));
 		emailField.click();
 		emailField.sendKeys("aditya@gmail.com");
-		MobileElement TellUs = driver
+		WebElement TellUs = driver
 				.findElement(MobileBy.xpath("//android.view.View[@content-desc='Tell us about yourself']"));
 		TellUs.click();
-		MobileElement nextButton = driver.findElement(MobileBy.xpath("//android.widget.Button[@content-desc='Next']"));
+		WebElement nextButton = driver.findElement(MobileBy.xpath("//android.widget.Button[@content-desc='Next']"));
 		nextButton.click();
 
-		// MobileElement outside=
+		// WebElement outside=
 		// driver.findElement(MobileBy.xpath("//android.view.View[@content-desc='* Your
 		// Profile Name Required']"));
 		driver.navigate().back();
@@ -910,44 +876,65 @@ Thread.sleep(5000);
 		// caps.setCapability("appium:appWaitForLaunch", false);
 		caps.setCapability("adbExecTimeout", 60000);
 		URL url = new URL("http://127.0.0.1:4723/wd/hub");
-		driver = new AndroidDriver<MobileElement>(url, caps);
+		driver = new AndroidDriver<WebElement>(url, caps);
 		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
-		// MobileElement out= driver.findElement(MobileBy.AccessibilityId("Login /
+		// WebElement out= driver.findElement(MobileBy.AccessibilityId("Login /
 		// Register"));
 		driver.navigate().back();
 		;
 		new WebDriverWait(driver, 5);
 		try {
-			MobileElement myTextField = driver.findElement(By.className("android.widget.EditText"));
+			WebElement myTextField = driver.findElement(By.className("android.widget.EditText"));
 			myTextField.click();
 			myTextField.sendKeys("7903825832");
 
 		} catch (StaleElementReferenceException e) {
-			MobileElement myTextField = driver.findElement(By.className("android.widget.EditText"));
+			WebElement myTextField = driver.findElement(By.className("android.widget.EditText"));
 			myTextField.click();
 			myTextField.sendKeys("7903825832");
 		}
 
 		new WebDriverWait(driver, 5);
-		MobileElement myCheckbox = driver
+		WebElement myCheckbox = driver
 				.findElement(By.xpath("//android.view.View[@content-desc='Agree to ']/android.widget.CheckBox"));
 		myCheckbox.click();
-		MobileElement Send = driver.findElement(MobileBy.xpath("//android.widget.Button[@content-desc='Send OTP']"));
+		WebElement Send = driver.findElement(MobileBy.xpath("//android.widget.Button[@content-desc='Send OTP']"));
 		Send.click();
 		new WebDriverWait(driver, 20);
 		WebElement verify = driver.findElement(MobileBy.AccessibilityId("Verify"));
 		// verify.click();
 
 	}
-	public void RegistrationPushDeeplinking()
-	{
-		
-	}
-	public void RegistrationInAppDeeplinking()
-	{
-		
+
+	@Test(priority = 10)
+	public void RegistrationPushDeeplinking() throws InterruptedException {
+		Thread.sleep(5000);
+		driver.openNotifications();
+		driver.findElement(MobileBy.AndroidUIAutomator(
+				"new UiScrollable(new UiSelector().scrollable(true)).setAsVerticalList().setMaxSearchSwipes(2).scrollIntoView("
+						+ "new UiSelector().textContains(\"welcome to the flock\"))"))
+				.click();
+		WebElement edit = null;
+		edit = driver.findElement(MobileBy.AccessibilityId(" Edit"));
+		assertNotNull(edit);
+		tearDown();
+
 	}
 
+	@Test(priority = 9)
+	public void RegistrationInAppDeeplinking() throws InterruptedException, MalformedURLException {
+		setup();
+		WebElement bell = driver.findElementByXPath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.View/android.view.View/android.view.View/android.view.View/android.view.View[1]/android.widget.ImageView[4]");	
+		bell.click();
+		String xpath = "//*[contains(@content-desc, 'welcome to the flock. Some cash is always welcome!')]";
+		WebElement Inapp = driver.findElement(By.xpath(xpath));
+		Inapp.click();
+		Thread.sleep(5000);
+		
+		WebElement addCash = driver.findElement(MobileBy.AccessibilityId("Add Cash"));
+		assertNotNull(addCash);
+
+	}
 
 	public void tearDown() {
 		// Tear down method to close the driver

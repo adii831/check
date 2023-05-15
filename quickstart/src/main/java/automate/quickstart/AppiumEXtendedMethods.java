@@ -29,7 +29,7 @@ import io.appium.java_client.MobileElement;
 import io.appium.java_client.android.AndroidDriver;
 
 public class AppiumEXtendedMethods {
-	public AndroidDriver<MobileElement> driver;
+	public AndroidDriver<WebElement> driver;
 
 	public Color getColor(WebElement element) throws IOException {
 

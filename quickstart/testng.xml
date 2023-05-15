@@ -3,9 +3,10 @@
 <suite name="Suite">
   <test thread-count="5" name="Test">
     <classes>
-      <class name="automate.quickstart.AppTest"/>
-      <class name="automate.quickstart.Registration"/>
-      <class name="automate.quickstart.EditProfile"/>
+      <class name="automate.quickstart.EditProfile"></class>
+      <class name="automate.quickstart.Logout"/>
+      <class name="automate.quickstart.Login"/><class name="automate.quickstart.Wallet"></class>
+      <class name="automate.quickstart.Registration"></class>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

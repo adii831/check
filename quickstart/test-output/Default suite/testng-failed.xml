@@ -3,11 +3,16 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="automate.quickstart.Registration">
+      <class name="automate.quickstart.EditProfile">
         <methods>
-          <include name="registrationLessThanTen"/>
+          <include name="MobileNumberNotEditable"/>
+          <include name="ProfileNamelessThanthree"/>
+          <include name="ProfileDeepLinkingInApp"/>
+          <include name="ProfileDeepLinking"/>
+          <include name="setup"/>
+          <include name="tearDown"/>
         </methods>
-      </class> <!-- automate.quickstart.Registration -->
+      </class> <!-- automate.quickstart.EditProfile -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
